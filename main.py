@@ -1,6 +1,11 @@
-import hiveconnect.hiveapp as hiveapp
+# import src.hiveconnect.hiveapp as hiveapp
+# hiveapp.create_table('orders_demo')
+# hiveapp.load_data('orders_demo')
 
-# to store the rows_data into list of tuples
-data = hiveapp.df_rows_details('employee')
+import pandas as pd
+import pyodbc
 
-print(data)
+sql_conn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER=.;DATABASE=BanHang;Trusted_Connection=yes') 
+query = "SELECT * FROM SanPham"
+df = pd.read_sql(query, sql_conn)
+print(df.head(5))
