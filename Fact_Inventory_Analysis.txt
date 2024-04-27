@@ -1,0 +1,60 @@
+Bảng DimInventory (Filecsv: ( inventory,film,film_category,category,langquage ))
+inventory_key(SK)
+inventory_id (BK)
+Title
+Description
+Release_year
+Language
+Rental_duration
+Rental_rate
+length
+Replacement_cost
+rating
+special_features
+Catalogy name
+
+Bảng DimDate (dimdate.csv)
+date_key STRING,
+full_date STRING,
+day_of_week INT,
+day_num_in_month INT,
+day_num_overall INT,
+day_name STRING,
+day_abbrev STRING,
+weekday_flag STRING,
+week_num_in_year INT,
+week_num_overall INT,
+week_begin_date STRING,
+week_begin_date_key STRING,
+month STRING,
+month_num_overall INT,
+month_name STRING,
+month_abbrev STRING,
+quarter INT,
+year INT,
+year_month STRING,
+fiscal_month INT,
+fiscal_quarter INT,
+fiscal_year INT,
+month_end_flag STRING
+
+
+
+Bảng DimRental (rental,payment)
+retal_key(SK)
+retal_id (BK)
+rental_date 
+return_date            
+staff_id
+payment_id
+amount
+payment_date           
+
+
+
+Bảng Fact_Inventory_Analysic (load dữ liệu từ 2 dim vào và 1 từ bảng orderdate nữa)
+inventory_key
+retal_key
+orderdate_key
+Total_Rental_Amount
+remaining
