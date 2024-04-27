@@ -42,6 +42,8 @@ CREATE TABLE Fact_Segment (
     rental_id INT,
     amount FLOAT,
     rental_date DATE,
+    first_date DATE,
+    recency INT,
     monetary FLOAT,
     frequency INT
 )
@@ -59,5 +61,6 @@ SELECT
     r.rental_id, r.amount, r.rental_date,
     (SELECT SUM(amount) FROM dim_rental sub_r WHERE sub_r.customer_id = c.customer_id) AS monetary,
     (SELECT COUNT(rental_id) FROM dim_rental sub_r WHERE sub_r.customer_id = c.customer_id) AS frequency
+    (...recency...)
 FROM dim_customer c
 JOIN dim_rental r ON r.customer_id = c.customer_id;
