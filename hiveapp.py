@@ -3,7 +3,6 @@ import pyodbc
 import pandas as pd 
 import logging
 import os
-
 logging.basicConfig(filename="log.txt",level=logging.DEBUG,
                     filemode='a',
                     format= '%(asctime)s - %(message)s',
@@ -16,15 +15,13 @@ def LoadData(csv_file_path, tablename):
         LOAD DATA LOCAL INPATH '/{absolute_csv_file_path}'
         OVERWRITE INTO TABLE {tablename}
         """
-        # Thực thi lệnh SQL
+        # Execute SQL statement
         cursor = connection.cursor()
         cursor.execute(load_data_sql)
         cursor.close()
-        
         print(f"Data loaded into {tablename} successfully.")
     except Exception as e:
         logging.error(e)
-        print(1)
         return None
 def CreateTableFact_Inventory_Analysic():
     try:
@@ -32,12 +29,13 @@ def CreateTableFact_Inventory_Analysic():
         create_table_sql="""CREATE TABLE Fact_Inventory_Analysis (
                                         inventory_key INT,
                                         rental_key INT,
-                                        orderdate_key STRING,
+                                        orderdate_key int,
                                         remaining INT,
                                         Total_Rental_Amount FLOAT
                                     )
                                     ROW FORMAT DELIMITED
                                     FIELDS TERMINATED BY ','
+                                    TBLPROPERTIES ('skip.header.line.count'='1')
                                 """
         cursor=connection.cursor()
         cursor.execute(create_table_sql)
@@ -45,7 +43,6 @@ def CreateTableFact_Inventory_Analysic():
         print(f"Table Fact_Inventory_Analysic created successfully")
     except Exception as e:
             logging.error(e)
-            print(2)
             return None 
 def CreateTableDimDate():
     try:
@@ -53,7 +50,7 @@ def CreateTableDimDate():
         connection=hive.Connection(host='127.0.0.1',port="10000",username='hdang',
                                     database='sakila')
         create_table_sql="""CREATE TABLE IF NOT EXISTS DimDate (
-                                    date_key STRING,
+                                    date_key int,
                                     full_date STRING,
                                     day_of_week INT,
                                     day_num_in_month INT,
@@ -80,6 +77,7 @@ def CreateTableDimDate():
                                 ROW FORMAT DELIMITED
                                 FIELDS TERMINATED BY ','
                                 STORED AS TEXTFILE
+                                TBLPROPERTIES ('skip.header.line.count'='1')
                                 """
         cursor=connection.cursor()
         cursor.execute(create_table_sql)
@@ -87,7 +85,6 @@ def CreateTableDimDate():
         print(f"Table DimDate created successfully")
     except Exception as e:
             logging.error(e)
-            print(2)
             return None 
 def CreateDimRental():
     try:
@@ -108,6 +105,7 @@ def CreateDimRental():
             ROW FORMAT DELIMITED
             FIELDS TERMINATED BY ','
             STORED AS TEXTFILE
+            TBLPROPERTIES ('skip.header.line.count'='1')
             """
         cursor=connection.cursor()
         cursor.execute(create_table_sql)
@@ -142,6 +140,7 @@ def CreateDimInventory():
         ROW FORMAT DELIMITED
         FIELDS TERMINATED BY ','
         STORED AS TEXTFILE
+        TBLPROPERTIES ('skip.header.line.count'='1')
         """
         # Thực thi lệnh SQL
         cursor = connection.cursor()
@@ -150,23 +149,18 @@ def CreateDimInventory():
         print(f"Table DimInventory created successfully.")
     except Exception as e:
         logging.error(e)
-        print(4)
         return None     
 def df_rows_details(table_name): 
     try:
-        pyodbc.autocommit = True
         connection = hive.Connection(host="127.0.0.1", port="10000", username='hdang', database='sakila')
-        
-        df = pd.read_sql(f"select * from {table_name}",connection)
-
-        records = df.to_records(index=False)
-        result = list(records)
-        print('\n converting the rows_data into python list of tuples \n')
-        print('converted suscessfully the rows_data into python list of tuples')
-    
+        df = pd.read_sql(f"select * from {table_name}", connection)
+        print('\n converting the rows_data into DataFrame \n')
+        print('converted successfully the rows_data into DataFrame')
+        print(df)  # In ra dữ liệu của DataFrame
     except Exception as e:
         logging.error(e)
         return None    
     
-    return result 
+    return df
+
     
