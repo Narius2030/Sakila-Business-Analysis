@@ -80,6 +80,55 @@ def CreateTableDimCustomer(username):
     except Exception as e:
         logging.error(e) 
 
+def CreateTableFactSegment(username):
+    
+    try:
+        connection = hive.Connection(host="127.0.0.1", port="10000", username=username, database='sakila_dwh')
+        cur = connection.cursor()
+        
+        cur.execute(f'''CREATE TABLE Fact_Segment (
+                            customer_id INT,
+                            city string,
+                            country string,
+                            active TINYINT,
+                            full_name string,
+                            rental_id INT,
+                            amount FLOAT,
+                            rental_date DATE,
+                            monetary FLOAT,
+                            frequency INT
+                        )
+                        CLUSTERED BY (customer_id) INTO 8 BUCKETS
+                        ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+                        STORED AS TEXTFILE''')
+        
+        print(f"FactSegment is created successfully \n")
+        logging.info('Table:- FactSegment is created successfully')
+        
+    except Exception as e:
+        logging.error(e)
+
+def IntegrateFactSegment(username):
+    
+    try:
+        connection = hive.Connection(host="127.0.0.1", port="10000", username=username, database='sakila_dwh')
+        cur = connection.cursor()
+        
+        cur.execute(f'''INSERT INTO TABLE Fact_Segment
+                        SELECT
+                            c.customer_id, c.city, c.country, c.active, c.full_name,
+                            r.rental_id, r.amount, r.rental_date,
+                            (SELECT SUM(amount) FROM dim_rental sub_r WHERE sub_r.customer_id = c.customer_id) AS monetary,
+                            (SELECT COUNT(rental_id) FROM dim_rental sub_r WHERE sub_r.customer_id = c.customer_id) AS frequency
+                        FROM dim_customer c
+                        JOIN dim_rental r ON r.customer_id = c.customer_id''')
+        
+        print(f"FactSegment is integrated successfully \n")
+        logging.info('Table:- FactSegment is integrated successfully')
+        
+    except Exception as e:
+        logging.error(e)
+
 # to load data into csv table
 def LoadData(table_name, csv_file_path, username):
     
@@ -87,6 +136,7 @@ def LoadData(table_name, csv_file_path, username):
         connection = hive.Connection(host="127.0.0.1", port="10000", username=username, database='sakila_dwh')
         absolute_csv_file_path = os.path.abspath(csv_file_path).replace("\\", "/")
         cur = connection.cursor()
+        
         cur.execute(f"LOAD DATA LOCAL INPATH '/{absolute_csv_file_path}' OVERWRITE INTO TABLE {table_name}")
         
         print(f'data is loaded successfully into {table_name} \n')
