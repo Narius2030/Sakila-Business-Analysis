@@ -1,14 +1,45 @@
+-- Database
+CREATE DATABASE sakila_dwh;use
+
 -- Rental Dimension
-
-
+CREATE TABLE Dim_Rental (
+    rental_key INT,
+    rental_id INT,
+    rental_date DATE,
+    inventory_id INT,
+    customer_id INT,
+    return_date DATE,
+    staff_id INT,
+    amount FLOAT,
+    payment_date DATE
+)
+CLUSTERED BY (rental_id) INTO 8 BUCKETS
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+STORED AS TEXTFILE;
 
 -- Customer Dimension
-
-
+CREATE TABLE Dim_Customer (
+    customer_key INT,
+    customer_id INT,
+    store_id INT,
+    address_id INT,
+    active INT,
+    full_name string,
+    city string,
+    country string
+)
+CLUSTERED BY (customer_id) INTO 6 BUCKETS
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+STORED AS TEXTFILE;
 
 -- Inventory Dimension
 
 
 
--- Query Command
+-- Fact Segment
 
+
+
+-- Query Command
+LOAD DATA LOCAL INPATH 'C:/Education/Uni/BigData/Final_Project/Data-Mining-with-ApacheHive/data/tables/dimCustomer.csv' OVERWRITE INTO TABLE Dim_Customer;
+LOAD DATA LOCAL INPATH 'C:/Education/Uni/BigData/Final_Project/Data-Mining-with-ApacheHive/data/tables/dimRental.csv' OVERWRITE INTO TABLE Dim_Rental;
