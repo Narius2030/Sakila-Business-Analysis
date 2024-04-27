@@ -31,7 +31,7 @@ def CreateTableFact_Inventory_Analysic():
         connection=hive.Connection(host='127.0.0.1',port='10000',username='hdang',database='sakila')
         create_table_sql="""CREATE TABLE Fact_Inventory_Analysis (
                                         inventory_key INT,
-                                        rental_id INT,
+                                        rental_key INT,
                                         orderdate_key STRING,
                                         remaining INT,
                                         Total_Rental_Amount FLOAT

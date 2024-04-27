@@ -1,6 +1,6 @@
 CREATE TABLE Fact_Inventory_Analysis (
                                         inventory_key INT,
-                                        rental_id INT,
+                                        rental_key INT,
                                         orderdate_key STRING,
                                         remaining INT,
                                         Total_Rental_Amount FLOAT
