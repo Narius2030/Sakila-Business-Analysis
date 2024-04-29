@@ -52,15 +52,23 @@ ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
 STORED AS TEXTFILE;
 
 -- Query Command
-LOAD DATA LOCAL INPATH 'C:/Education/Uni/BigData/Final_Project/Data-Mining-with-ApacheHive/data/tables/dimCustomer.csv' OVERWRITE INTO TABLE Dim_Customer;
-LOAD DATA LOCAL INPATH 'C:/Education/Uni/BigData/Final_Project/Data-Mining-with-ApacheHive/data/tables/dimRental.csv' OVERWRITE INTO TABLE Dim_Rental;
+LOAD DATA LOCAL INPATH 'D:\HCMUTE\Namba\HK02\BDAAnalyst\Final\Data-Mining-with-ApacheHive\data\tables\dimCustomer.csv' OVERWRITE INTO TABLE Dim_Customer;
+LOAD DATA LOCAL INPATH 'D:\HCMUTE\Namba\HK02\BDAAnalyst\Final\Data-Mining-with-ApacheHive\data\tables\dimRental.csv' OVERWRITE INTO TABLE Dim_Rental;
 
+-- Insert into Fact_Segment
 INSERT INTO TABLE Fact_Segment
 SELECT
     c.customer_id, c.city, c.country, c.active, c.full_name,
     r.rental_id, r.amount, r.rental_date,
+    (SELECT MIN(rental_date) FROM Dim_Rental sub_r WHERE sub_r.customer_id = c.customer_id) AS first_date,
+    CAST(
+        DATEDIFF(
+            DAY,
+            (SELECT MIN(rental_date) FROM Dim_Rental sub_r WHERE sub_r.customer_id = c.customer_id),
+            (SELECT MAX(rental_date) FROM Dim_Rental sub_r WHERE sub_r.customer_id = c.customer_id)
+        ) AS INT
+    ) AS recency
     (SELECT SUM(amount) FROM dim_rental sub_r WHERE sub_r.customer_id = c.customer_id) AS monetary,
     (SELECT COUNT(rental_id) FROM dim_rental sub_r WHERE sub_r.customer_id = c.customer_id) AS frequency
-    (...recency...)
 FROM dim_customer c
 JOIN dim_rental r ON r.customer_id = c.customer_id;

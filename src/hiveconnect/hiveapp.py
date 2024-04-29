@@ -1,4 +1,3 @@
-import pyodbc 
 from pyhive import hive
 import pandas as pd 
 import logging
@@ -30,7 +29,7 @@ def create_database(dbname, username):
 def CreateTableDimRental(username):
     
     try:
-        connection = hive.Connection(host="127.0.0.1", port="10000", username=username, database='sakila_dwh')
+        connection = hive.Connection(host="127.0.0.1", port="10000", username=username, database = 'temp')
         cur = connection.cursor()
         
         cur.execute(f'''CREATE TABLE Dim_Rental (
@@ -163,7 +162,6 @@ def drop_temp_table(table_name, username):
 #store the row details into python list of tuples
 def ExtractRows(sqlstr, username): 
     try:
-        pyodbc.autocommit = True
         connection = hive.Connection(host="127.0.0.1", port="10000", username=username, database='sakila_dwh')
         
         df = pd.read_sql(sqlstr, connection)
