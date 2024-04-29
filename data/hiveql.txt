@@ -67,7 +67,7 @@ SELECT
             (SELECT MIN(rental_date) FROM Dim_Rental sub_r WHERE sub_r.customer_id = c.customer_id),
             (SELECT MAX(rental_date) FROM Dim_Rental sub_r WHERE sub_r.customer_id = c.customer_id)
         ) AS INT
-    ) AS recency
+    ) AS recency,
     (SELECT SUM(amount) FROM dim_rental sub_r WHERE sub_r.customer_id = c.customer_id) AS monetary,
     (SELECT COUNT(rental_id) FROM dim_rental sub_r WHERE sub_r.customer_id = c.customer_id) AS frequency
 FROM dim_customer c
