@@ -8,12 +8,8 @@ hiveapp.CreateTableDimCustomer('buidu')
 hiveapp.LoadData('dim_rental', 'C:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\data\\tables\\dimRental.csv', 'buidu')
 hiveapp.LoadData('dim_customer', 'C:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\data\\tables\\dimCustomer.csv', 'buidu')
 
-# # Create fact table
+# Create fact table
 hiveapp.CreateTableFactSegment('buidu')
 
 # Integrate data to Fact Segment
 hiveapp.IntegrateFactSegment('buidu')
-
-if __name__ == '__main__':
-    data = hiveapp.ExtractRows('''SELECT * FROM fact_segment LIMIT 10''', 'buidu')
-    print(data)

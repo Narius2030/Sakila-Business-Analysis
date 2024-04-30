@@ -95,6 +95,8 @@ def CreateTableFactSegment(username):
                             rental_id INT,
                             amount FLOAT,
                             rental_date DATE,
+                            first_date DATE,
+                            recency INT,
                             monetary FLOAT,
                             frequency INT
                         )
@@ -118,6 +120,11 @@ def IntegrateFactSegment(username):
                         SELECT
                             c.customer_id, c.city, c.country, c.active, c.full_name,
                             r.rental_id, r.amount, r.rental_date,
+                            (SELECT MIN(rental_date) FROM Dim_Rental sub_r WHERE sub_r.customer_id = c.customer_id) AS first_date,
+                            DATEDIFF(
+                                (SELECT MAX(rental_date) FROM Dim_Rental sub_r WHERE sub_r.customer_id = c.customer_id),
+                                (SELECT MIN(rental_date) FROM Dim_Rental sub_r WHERE sub_r.customer_id = c.customer_id)
+                            ) AS recency,
                             (SELECT SUM(amount) FROM dim_rental sub_r WHERE sub_r.customer_id = c.customer_id) AS monetary,
                             (SELECT COUNT(rental_id) FROM dim_rental sub_r WHERE sub_r.customer_id = c.customer_id) AS frequency
                         FROM dim_customer c
@@ -146,13 +153,13 @@ def LoadData(table_name, csv_file_path, username):
         logging.error(e)
 
 # drop table temp table;
-def drop_temp_table(table_name, username):
+def drop_table(table_name, username):
     
     try:
         connection = hive.Connection(host="127.0.0.1", port="10000", username=username, database='sakila_dwh')
         cur = connection.cursor()
-        cur.execute('use hive_challange')
-        cur.execute(f"drop table {table_name}")
+        
+        cur.execute(f"DROP TABLE {table_name}")
         
         print(f'\n Table: {table_name} is deleted successfully \n')        
         logging.info(f'Table: {table_name} is deleted successfully')
