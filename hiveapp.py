@@ -96,9 +96,9 @@ def CreateDimRental():
                 rental_id INT,
                 rental_date STRING,
                 inventory_id int,
+                customer_id INT,
                 return_date STRING,
                 staff_id INT,
-                payment_id INT,
                 amount DECIMAL(10, 2),
                 payment_date STRING
             )
