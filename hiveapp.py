@@ -32,7 +32,7 @@ def CreateTableFact_Inventory_Analysic():
                                         orderdate_key int,
                                         remaining INT,
                                         Total_Rental_Amount FLOAT
-                                    )
+    3                                   )
                                     ROW FORMAT DELIMITED
                                     FIELDS TERMINATED BY ','
                                     TBLPROPERTIES ('skip.header.line.count'='1')
