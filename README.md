@@ -7,4 +7,5 @@
 
 * Diagram of Data Warehouse Architecture
 
-![Hive_App-Hive Architecture](https://github.com/Narius2030/Data-Mining-with-ApacheHive/assets/94912102/4f5986c1-82b2-4633-a86a-485d69d30696)
+![Hive_App-Hive Architecture](https://github.com/Narius2030/Data-Mining-with-ApacheHive/assets/94912102/81dc04fd-2387-4cce-962f-a5868adc8cab)
+
