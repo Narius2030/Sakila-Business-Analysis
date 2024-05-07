@@ -2,7 +2,7 @@
 
 * Work-flow:
 
-![Hive_App-Work-flow](https://github.com/Narius2030/Data-Mining-with-ApacheHive/assets/94912102/519824fb-04fa-4f73-b312-2b063711a3b3)
+![Hive_App-Work-flow](https://github.com/Narius2030/Data-Mining-with-ApacheHive/assets/94912102/d6051d77-679b-4405-8471-5b4b80183381)
 
 
 * Diagram of Data Warehouse Architecture
