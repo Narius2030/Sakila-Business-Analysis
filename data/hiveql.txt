@@ -1,5 +1,5 @@
 -- Database
-CREATE DATABASE sakila_dwh;use
+CREATE DATABASE sakila_dwh;
 
 -- Rental Dimension
 CREATE TABLE Dim_Rental (
