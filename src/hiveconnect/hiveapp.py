@@ -43,7 +43,7 @@ def CreateTableDimRental(username):
                             amount FLOAT,
                             payment_date DATE
                         )
-                        CLUSTERED BY (rental_id) INTO 8 BUCKETS
+                        PARTITIONED BY (rental_month INT)
                         ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
                         STORED AS TEXTFILE''')
         

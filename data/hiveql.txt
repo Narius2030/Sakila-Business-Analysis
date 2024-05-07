@@ -13,7 +13,7 @@ CREATE TABLE Dim_Rental (
     amount FLOAT,
     payment_date DATE
 )
-CLUSTERED BY (rental_id) INTO 8 BUCKETS
+PARTITIONED BY (rental_month INT)
 ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
 STORED AS TEXTFILE;
 
@@ -55,7 +55,7 @@ STORED AS TEXTFILE;
 
 --## Load into rental and customer dimensions
 LOAD DATA LOCAL INPATH 'C:/Education/Uni/BigData/Final_Project/Data-Mining-with-ApacheHive/data/tables/dimCustomer.csv' OVERWRITE INTO TABLE Dim_Customer;
-LOAD DATA LOCAL INPATH 'C:/Education/Uni/BigData/Final_Project/Data-Mining-with-ApacheHive/data/tables/dimRental.csv' OVERWRITE INTO TABLE Dim_Rental;
+LOAD DATA LOCAL INPATH 'C:/Education/Uni/BigData/Final_Project/Data-Mining-with-ApacheHive/data/tables/dimRental.txt' OVERWRITE INTO TABLE Dim_Rental;
 
 --## Load into Fact_Segment fact table
 INSERT INTO TABLE Fact_Segment

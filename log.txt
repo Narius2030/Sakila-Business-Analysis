@@ -215,3 +215,49 @@
 04-May-24 08:04:51 - findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
 04-May-24 08:04:51 - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
 04-May-24 08:04:51 - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+07-May-24 12:00:25 - TOpenSessionResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), serverProtocolVersion=5, sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'@\xe3v\xfa{\xcd@\xd9\x98\xeaI{\x06\x9fr\xe6', secret=b'd.w\xb5?{J\xd2\x88 NB7\xc1\x88\xeb')), configuration={'hive.server2.thrift.resultset.default.fetch.size': '1000'})
+07-May-24 12:00:25 - USE `sakila_dwh`
+07-May-24 12:00:25 - TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'@\xe3v\xfa{\xcd@\xd9\x98\xeaI{\x06\x9fr\xe6', secret=b'd.w\xb5?{J\xd2\x88 NB7\xc1\x88\xeb')), statement='USE `sakila_dwh`', confOverlay=None, runAsync=False, queryTimeout=0)
+07-May-24 12:00:28 - TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'|hV\x07W\xa0DR\xb2i>D\xd2\xbc\xb0t', secret=b'\xa5\x91&\xc1KPI\xaf\xbaM\x92n_\xab\xabZ'), operationType=0, hasResultSet=False, modifiedRowCount=None))
+07-May-24 12:00:28 - TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))
+07-May-24 12:00:28 - CREATE TABLE Fact_Segment (
+                            customer_id INT,
+                            city string,
+                            country string,
+                            active TINYINT,
+                            full_name string,
+                            rental_id INT,
+                            amount FLOAT,
+                            rental_date DATE,
+                            first_date DATE,
+                            recency INT,
+                            monetary FLOAT,
+                            frequency INT
+                        )
+                        CLUSTERED BY (customer_id) INTO 8 BUCKETS
+                        ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+                        STORED AS TEXTFILE
+07-May-24 12:00:28 - TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'@\xe3v\xfa{\xcd@\xd9\x98\xeaI{\x06\x9fr\xe6', secret=b'd.w\xb5?{J\xd2\x88 NB7\xc1\x88\xeb')), statement="CREATE TABLE Fact_Segment (\n                            customer_id INT,\n                            city string,\n                            country string,\n                            active TINYINT,\n                            full_name string,\n                            rental_id INT,\n                            amount FLOAT,\n                            rental_date DATE,\n                            first_date DATE,\n                            recency INT,\n                            monetary FLOAT,\n                            frequency INT\n                        )\n                        CLUSTERED BY (customer_id) INTO 8 BUCKETS\n                        ROW FORMAT DELIMITED FIELDS TERMINATED BY ','\n                        STORED AS TEXTFILE", confOverlay=None, runAsync=False, queryTimeout=0)
+07-May-24 12:00:30 - TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\xfd\x9f\x1b\x8b\x03\xf0A\xda\xb0#\xe7\x8c}\x8bY\xd4', secret=b'l/K\x159yA\x03\xbd\xb5\xf0%\xd8fg\xd9'), operationType=0, hasResultSet=False, modifiedRowCount=None))
+07-May-24 12:00:30 - Table:- FactSegment is created successfully
+07-May-24 12:00:30 - TOpenSessionResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), serverProtocolVersion=5, sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'\xdf\xb1\xa6\xa0v?K\xce\xa3I\xa6 \xa1e\xd9\r', secret=b'\xdb\xde\xaa\xcf\x89\xb3N#\xa3\x98u\x8f\xf6ks\xc1')), configuration={'hive.server2.thrift.resultset.default.fetch.size': '1000'})
+07-May-24 12:00:30 - USE `sakila_dwh`
+07-May-24 12:00:30 - TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'\xdf\xb1\xa6\xa0v?K\xce\xa3I\xa6 \xa1e\xd9\r', secret=b'\xdb\xde\xaa\xcf\x89\xb3N#\xa3\x98u\x8f\xf6ks\xc1')), statement='USE `sakila_dwh`', confOverlay=None, runAsync=False, queryTimeout=0)
+07-May-24 12:00:30 - TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\xcb\x81qD_uF\x84\x8f\xb0\xfd\xcc$\n%\x03', secret=b'Zj\x16,$\x9bLk\x93\x1d\x82\x9f\x17$$4'), operationType=0, hasResultSet=False, modifiedRowCount=None))
+07-May-24 12:00:30 - TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))
+07-May-24 12:00:30 - INSERT INTO TABLE Fact_Segment
+                        SELECT
+                            c.customer_id, c.city, c.country, c.active, c.full_name,
+                            r.rental_id, r.amount, r.rental_date,
+                            (SELECT MIN(rental_date) FROM Dim_Rental sub_r WHERE sub_r.customer_id = c.customer_id) AS first_date,
+                            DATEDIFF(
+                                (SELECT MAX(rental_date) FROM Dim_Rental sub_r WHERE sub_r.customer_id = c.customer_id),
+                                (SELECT MIN(rental_date) FROM Dim_Rental sub_r WHERE sub_r.customer_id = c.customer_id)
+                            ) AS recency,
+                            (SELECT SUM(amount) FROM dim_rental sub_r WHERE sub_r.customer_id = c.customer_id) AS monetary,
+                            (SELECT COUNT(rental_id) FROM dim_rental sub_r WHERE sub_r.customer_id = c.customer_id) AS frequency
+                        FROM dim_customer c
+                        JOIN dim_rental r ON r.customer_id = c.customer_id
+07-May-24 12:00:30 - TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'\xdf\xb1\xa6\xa0v?K\xce\xa3I\xa6 \xa1e\xd9\r', secret=b'\xdb\xde\xaa\xcf\x89\xb3N#\xa3\x98u\x8f\xf6ks\xc1')), statement='INSERT INTO TABLE Fact_Segment\n                        SELECT\n                            c.customer_id, c.city, c.country, c.active, c.full_name,\n                            r.rental_id, r.amount, r.rental_date,\n                            (SELECT MIN(rental_date) FROM Dim_Rental sub_r WHERE sub_r.customer_id = c.customer_id) AS first_date,\n                            DATEDIFF(\n                                (SELECT MAX(rental_date) FROM Dim_Rental sub_r WHERE sub_r.customer_id = c.customer_id),\n                                (SELECT MIN(rental_date) FROM Dim_Rental sub_r WHERE sub_r.customer_id = c.customer_id)\n                            ) AS recency,\n                            (SELECT SUM(amount) FROM dim_rental sub_r WHERE sub_r.customer_id = c.customer_id) AS monetary,\n                            (SELECT COUNT(rental_id) FROM dim_rental sub_r WHERE sub_r.customer_id = c.customer_id) AS frequency\n                        FROM dim_customer c\n                        JOIN dim_rental r ON r.customer_id = c.customer_id', confOverlay=None, runAsync=False, queryTimeout=0)
+07-May-24 12:12:13 - TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\xcf\xbc+\xae\x1e8L\x0f\x8d\xd3"ze\xcc\xf4\x99', secret=b'\xec\xeel\xe0x\xaeG\xa3\xa7\x01\xf3\xd6\x08\xfb;C'), operationType=0, hasResultSet=False, modifiedRowCount=None))
+07-May-24 12:12:13 - Table:- FactSegment is integrated successfully
