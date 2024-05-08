@@ -52,7 +52,7 @@ payment_date
 
 
 
-Bảng Fact_Inventory_Analysic (load dữ liệu từ 2 dim vào và 1 từ bảng orderdate nữa)
+Bảng Fact_Inventory_Analysic (load dữ liệu từ 3 dim vào và 1 từ bảng orderdate nữa)
 inventory_key
 retal_key
 orderdate_key
