@@ -1,132 +1,166 @@
-import pyodbc 
 from pyhive import hive
+import pyodbc 
 import pandas as pd 
 import logging
-
-# logging basic file config:-
+import os
 logging.basicConfig(filename="log.txt",level=logging.DEBUG,
                     filemode='a',
                     format= '%(asctime)s - %(message)s',
                     datefmt= '%d-%b-%y %H:%M:%S') 
-
-# to create database
-def create_database(dbname):
-      
+def LoadData(csv_file_path, tablename):
     try:
-        pyodbc.autocommit = True
-        connection = pyodbc.connect("DSN=Hive_connection", autocommit=True)
-        cur = connection.cursor()
-        cur.execute(f"CREATE DATABASE {dbname};")
-        print(f"\n Database:- {dbname} is created successfully \n")
-        logging.info(f"Database:- {dbname}is created successfully")
-        
-        
-    except Exception as e:
-        logging.error(e)   
-
-
-
-# create temporary csv table
-def create_table(tablename):
-    
-    try:
-        connection = hive.Connection(host="127.0.0.1", port="10000", username='buidu', database='default')
-        cur = connection.cursor()
-        
-        cur.execute(f"create table {tablename} (order_id INT, order_date DATE, order_customer_id INT, order_status string) \
-            ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' \
-            STORED AS TEXTFILE")
-        
-        print(f"{tablename} is created successfully \n")
-        logging.info('Table:- {tablename} is created successfully')
-        
-    except Exception as e:
-        logging.error(e) 
-
-# to load data into csv table
-def load_data(table_name):
-    
-    try:
-        pyodbc.autocommit = True
-        connection = hive.Connection(host="127.0.0.1", port="10000", username='buidu', database='default')
-        cur = connection.cursor()
-        cur.execute(f"load data local inpath 'C:/Education/Uni/BigData/Final_Project/data/retail_db/orders/orders.txt' overwrite into table {table_name}")
-        print(f'data is loaded into {table_name} \n')
-        logging.info(f'data is loaded into {table_name}')
-        
+        connection = hive.Connection(host="127.0.0.1", port="10000", username='hdang', database='sakila')
+        absolute_csv_file_path = os.path.abspath(csv_file_path).replace("\\", "/")
+        load_data_sql = f""" 
+        LOAD DATA LOCAL INPATH '/{absolute_csv_file_path}'
+        OVERWRITE INTO TABLE {tablename}
+        """
+        # Execute SQL statement
+        cursor = connection.cursor()
+        cursor.execute(load_data_sql)
+        cursor.close()
+        print(f"Data loaded into {tablename} successfully.")
     except Exception as e:
         logging.error(e)
-
-# to create permanent orc table and load data from temp csv table.
-def create_table_orc_permanent(tablename1,tablename2):
-    
+        return None
+def CreateTableFact_Inventory_Analysic():
     try:
-        pyodbc.autocommit = True
-        connection = pyodbc.connect("DSN=Hive_connection", autocommit=True)
-        cur = connection.cursor()
-        cur.execute('use hive_challange;')
-        cur.execute(f"create table {tablename2}(d_id int, d_name string, d_destin string, d_code int) row format delimited fields terminated by ',' stored as parquet;")
-        cur.execute(f"from {tablename1} insert overwrite table {tablename2} select *;")
-        print(f'Table:- {tablename2} is created successfully \n')
-        logging.info(f'Table:- Permanent table {tablename2} is created successfully')
-        
+        connection=hive.Connection(host='127.0.0.1',port='10000',username='hdang',database='sakila')
+        create_table_sql="""CREATE TABLE Fact_Inventory_Analysis (
+                                        inventory_key INT,
+                                        rental_key INT,
+                                        orderdate_key int,
+                                        remaining INT,
+                                        Total_Rental_Amount FLOAT
+    3                                   )
+                                    ROW FORMAT DELIMITED
+                                    FIELDS TERMINATED BY ','
+                                    TBLPROPERTIES ('skip.header.line.count'='1')
+                                """
+        cursor=connection.cursor()
+        cursor.execute(create_table_sql)
+        cursor.close()
+        print(f"Table Fact_Inventory_Analysic created successfully")
     except Exception as e:
+            logging.error(e)
+            return None 
+def CreateTableDimDate():
+    try:
+        # lệnh kết nối
+        connection=hive.Connection(host='127.0.0.1',port="10000",username='hdang',
+                                    database='sakila')
+        create_table_sql="""CREATE TABLE IF NOT EXISTS DimDate (
+                                    date_key int,
+                                    full_date STRING,
+                                    day_of_week INT,
+                                    day_num_in_month INT,
+                                    day_num_overall INT,
+                                    day_name STRING,
+                                    day_abbrev STRING,
+                                    weekday_flag STRING,
+                                    week_num_in_year INT,
+                                    week_num_overall INT,
+                                    week_begin_date STRING,
+                                    week_begin_date_key STRING,
+                                    month STRING,
+                                    month_num_overall INT,
+                                    month_name STRING,
+                                    month_abbrev STRING,
+                                    quarter INT,
+                                    year INT,
+                                    year_month STRING,
+                                    fiscal_month INT,
+                                    fiscal_quarter INT,
+                                    fiscal_year INT,
+                                    month_end_flag STRING
+                                )
+                                ROW FORMAT DELIMITED
+                                FIELDS TERMINATED BY ','
+                                STORED AS TEXTFILE
+                                TBLPROPERTIES ('skip.header.line.count'='1')
+                                """
+        cursor=connection.cursor()
+        cursor.execute(create_table_sql)
+        cursor.close()
+        print(f"Table DimDate created successfully")
+    except Exception as e:
+            logging.error(e)
+            return None 
+def CreateDimRental():
+    try:
+        #lệnh kết nối
+        connection = hive.Connection(host="127.0.0.1", port="10000", username='hdang', database='sakila')
+        create_table_sql= """
+                CREATE TABLE DimRental (
+                rental_key INT,
+                rental_id INT,
+                rental_date STRING,
+                inventory_id int,
+                customer_id INT,
+                return_date STRING,
+                staff_id INT,
+                amount DECIMAL(10, 2),
+                payment_date STRING
+            )
+            ROW FORMAT DELIMITED
+            FIELDS TERMINATED BY ','
+            STORED AS TEXTFILE
+            TBLPROPERTIES ('skip.header.line.count'='1')
+            """
+        cursor=connection.cursor()
+        cursor.execute(create_table_sql)
+        cursor.close()
+        print(f"Table DimRental created successfully.")   
+    except Exception as e:
+        print(3)
         logging.error(e)
-
-
-import warnings 
-warnings.filterwarnings('ignore')
-
-# to print the sorted table into dataframe
-
-def show_sorted_dataframe(table_name): 
-    try:
-        pyodbc.autocommit = True
-        connection = pyodbc.connect("DSN=Hive_connection", autocommit=True)
-        cur = connection.cursor()
-        cur.execute(f"use hive_challange;")
-        df = pd.read_sql(f"select * from {table_name} sort by d_id Desc;",connection)
-        print(f'sorting of table {table_name} is under process..... \n')
-        print(df)
-        logging.info('sorting of the table in descending order wrt d_id is done and table is displayed as dataframe')
-
-    except Exception as e:
-        logging.error(e)  
-
-# drop table temp table;
-def drop_temp_table(tablename):
-    
-    try:
-        pyodbc.autocommit = True
-        connection = pyodbc.connect("DSN=Hive_connection", autocommit=True)
-        cur = connection.cursor()
-        cur.execute('use hive_challange')
-        cur.execute(f"drop table {tablename};")
-        print(f'\n Table:- Temprory csv table {tablename} is deleted successfully \n')        
-        logging.info(f'Table:- Temprory csv table {tablename} is deleted successfully')
-        
-    except Exception as e:
-        logging.error(e) 
-
-
-# To remove the sql Alchemy warning
-warnings.filterwarnings('ignore')
-
+        return None 
 #store the row details into python list of tuples
+def CreateDimInventory(): 
+    try:
+        # Kết nối đến Hive server
+        connection = hive.Connection(host="127.0.0.1", port="10000", username='hdang', database='sakila')
+        # Lệnh SQL để tạo bảng
+        create_table_sql = """
+        CREATE TABLE DimInventory (
+            inventory_key INT,
+            inventory_id INT,
+            title STRING,
+            description STRING,
+            release_year INT,
+            language STRING,
+            rental_duration INT,
+            rental_rate DECIMAL(5,2),
+            length INT,
+            replacement_cost DECIMAL(5,2),
+            rating STRING,
+            special_features STRING,
+            catalogy_name STRING
+        )
+        ROW FORMAT DELIMITED
+        FIELDS TERMINATED BY ','
+        STORED AS TEXTFILE
+        TBLPROPERTIES ('skip.header.line.count'='1')
+        """
+        # Thực thi lệnh SQL
+        cursor = connection.cursor()
+        cursor.execute(create_table_sql)
+        cursor.close()
+        print(f"Table DimInventory created successfully.")
+    except Exception as e:
+        logging.error(e)
+        return None     
 def df_rows_details(table_name): 
     try:
-        pyodbc.autocommit = True
-        connection = hive.Connection(host="127.0.0.1", port="10000", username='buidu', database='default')
-        
-        df = pd.read_sql(f"select * from {table_name}",connection)
-
-        records = df.to_records(index=False)
-        result = list(records)
-        print('\n converting the rows_data into python list of tuples \n')
-        print('converted suscessfully the rows_data into python list of tuples')
-    
+        connection = hive.Connection(host="127.0.0.1", port="10000", username='hdang', database='sakila')
+        df = pd.read_sql(f"select * from {table_name}", connection)
+        print('\n converting the rows_data into DataFrame \n')
+        print('converted successfully the rows_data into DataFrame')
+        print(df)  # In ra dữ liệu của DataFrame
     except Exception as e:
         logging.error(e)
         return None    
     
-    return result
+    return df
+
+    
