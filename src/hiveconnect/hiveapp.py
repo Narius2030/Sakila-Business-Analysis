@@ -7,9 +7,10 @@ logging.basicConfig(filename="log.txt",level=logging.DEBUG,
                     filemode='a',
                     format= '%(asctime)s - %(message)s',
                     datefmt= '%d-%b-%y %H:%M:%S') 
-def LoadData(csv_file_path, tablename):
+
+def LoadData(csv_file_path, tablename,username):
     try:
-        connection = hive.Connection(host="127.0.0.1", port="10000", username='hdang', database='sakila')
+        connection = hive.Connection(host="127.0.0.1", port="10000", username=username, database='sakila_dwh')
         absolute_csv_file_path = os.path.abspath('data').replace("\\", "/")
         temp_path=os.path.join(absolute_csv_file_path,"tables").replace("\\","/")
         final_path=os.path.join(temp_path,csv_file_path).replace("\\", "/")
@@ -25,32 +26,48 @@ def LoadData(csv_file_path, tablename):
     except Exception as e:
         logging.error(e)
         return None
-def CreateTableFact_Inventory_Analysic():
+
+def CreateTableFact_Inventory_Analysis_TextFile(username):
     try:
-        connection=hive.Connection(host='127.0.0.1',port='10000',username='hdang',database='sakila')
-        create_table_sql="""CREATE TABLE Fact_Inventory_Analysis (
+        connection=hive.Connection(host='127.0.0.1',port='10000',username = username,database='sakila_dwh')
+        create_table_sql="""CREATE TABLE Fact_Inventory_Analysis_TextFile (
                                         inventory_key INT,
                                         rental_key INT,
-                                        orderdate_key int,
+                                        rental_date_key int,
                                         remaining INT,
-                                        Total_Rental_Amount FLOAT
+                                        Total_Rental_Amount FLOAT 
                                               )
                                     ROW FORMAT DELIMITED
                                     FIELDS TERMINATED BY ','
+                                    STORED AS TEXTFILE
                                     TBLPROPERTIES ('skip.header.line.count'='1')
                                 """
         cursor=connection.cursor()
         cursor.execute(create_table_sql)
         cursor.close()
-        print(f"Table Fact_Inventory_Analysic created successfully")
+        print(f"Table Fact_Inventory_Analysis_TextFile created successfully")
     except Exception as e:
             logging.error(e)
             return None 
-def CreateTableDimDate():
+def CreateTableFact_Inventory_Analysis_ORC(username):
+    try:
+        connection=hive.Connection(host='127.0.0.1',port='10000',username = username,database='sakila_dwh')
+        create_table_sql="""
+                            CREATE TABLE Fact_Inventory_Analysis_ORC STORED AS ORC
+                            AS SELECT * FROM Fact_Inventory_Analysis_TextFile
+                         """
+        cursor=connection.cursor()
+        cursor.execute(create_table_sql)
+        cursor.close()
+        print(f"Table Fact_Inventory_Analysic_ORC created successfully")
+    except Exception as e:
+            logging.error(e)
+            return None 
+def CreateTableDimDate(username):
     try:
         # lệnh kết nối
-        connection=hive.Connection(host='127.0.0.1',port="10000",username='hdang',
-                                    database='sakila')
+        connection=hive.Connection(host='127.0.0.1',port="10000",username=username,
+                                    database='sakila_dwh')
         create_table_sql="""CREATE TABLE IF NOT EXISTS DimDate (
                                     date_key int,
                                     full_date STRING,
@@ -88,10 +105,10 @@ def CreateTableDimDate():
     except Exception as e:
             logging.error(e)
             return None 
-def CreateDimRental():
+def CreateDimRental(username):
     try:
         #lệnh kết nối
-        connection = hive.Connection(host="127.0.0.1", port="10000", username='hdang', database='sakila')
+        connection = hive.Connection(host="127.0.0.1", port="10000", username=username, database='sakila_dwh')
         create_table_sql= """
                 CREATE TABLE DimRental (
                 rental_key INT,
@@ -118,10 +135,10 @@ def CreateDimRental():
         logging.error(e)
         return None 
 #store the row details into python list of tuples
-def CreateDimInventory(): 
+def CreateDimInventory(username): 
     try:
         # Kết nối đến Hive server
-        connection = hive.Connection(host="127.0.0.1", port="10000", username='hdang', database='sakila')
+        connection = hive.Connection(host="127.0.0.1", port="10000", username=username, database='sakila_dwh')
         # Lệnh SQL để tạo bảng
         create_table_sql = """
         CREATE TABLE DimInventory (
@@ -152,9 +169,9 @@ def CreateDimInventory():
     except Exception as e:
         logging.error(e)
         return None     
-def df_rows_details(table_name): 
+def df_rows_details(username,table_name): 
     try:
-        connection = hive.Connection(host="127.0.0.1", port="10000", username='hdang', database='sakila')
+        connection = hive.Connection(host="127.0.0.1", port="10000", username=username, database='sakila_dwh')
         df = pd.read_sql(f"select * from {table_name}", connection)
         print('\n converting the rows_data into DataFrame \n')
         print('converted successfully the rows_data into DataFrame')
