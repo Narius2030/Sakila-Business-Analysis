@@ -1,15 +1,15 @@
 from src.hiveconnect import hiveapp
 
 # Create dimension tables
-hiveapp.CreateTableDimRental('buidu')
-hiveapp.CreateTableDimCustomer('buidu')
+hiveapp.CreateTableDimRental(username='buidu')
+hiveapp.CreateTableDimCustomer(username='buidu')
 
 # # Load csv stages to dimension tables
-hiveapp.LoadData('dim_rental', 'C:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\data\\tables\\dimRental.csv', 'buidu')
-hiveapp.LoadData('dim_customer', 'C:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\data\\tables\\dimCustomer.csv', 'buidu')
+hiveapp.LoadData('dimRental.csv', 'dim_rental', username='buidu')
+hiveapp.LoadData('dimCustomer.csv', 'dim_customer', username='buidu')
 
 # Create fact table
-hiveapp.CreateTableFactSegment('buidu')
+hiveapp.CreateTableFactSegment(username='buidu')
 
 # Integrate data to Fact Segment
-hiveapp.IntegrateFactSegment('buidu')
+hiveapp.IntegrateFactSegment(username='buidu')

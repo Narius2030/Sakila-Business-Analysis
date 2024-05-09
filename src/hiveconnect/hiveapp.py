@@ -136,20 +136,28 @@ def IntegrateFactSegment(username):
         logging.error(e)
 
 # to load data into csv table
-def LoadData(table_name, csv_file_path, username):
-    
+def LoadData(csv_file_path, tablename, username):
     try:
         connection = hive.Connection(host="127.0.0.1", port="10000", username=username, database='sakila_dwh')
-        absolute_csv_file_path = os.path.abspath(csv_file_path).replace("\\", "/")
-        cur = connection.cursor()
+        absolute_csv_file_path = os.path.abspath('data').replace("\\", "/")
+        temp_path=os.path.join(absolute_csv_file_path,"tables").replace("\\","/")
+        final_path=os.path.join(temp_path,csv_file_path).replace("\\", "/")
         
-        cur.execute(f"LOAD DATA LOCAL INPATH '/{absolute_csv_file_path}' OVERWRITE INTO TABLE {table_name}")
-        
-        print(f'data is loaded successfully into {table_name} \n')
-        logging.info(f'data is loaded successfully into {table_name}')
+        load_data_sql = f""" 
+                        LOAD DATA LOCAL INPATH '/{final_path}'
+                        OVERWRITE INTO TABLE {tablename}
+                        """
+        # Execute SQL statement
+        cursor = connection.cursor()
+        cursor.execute(load_data_sql)
+        cursor.close()
+        print(f"Data loaded into {tablename} successfully.")
         
     except Exception as e:
         logging.error(e)
+        return None
+    
+    
 
 # drop table temp table;
 def drop_table(table_name, username):
