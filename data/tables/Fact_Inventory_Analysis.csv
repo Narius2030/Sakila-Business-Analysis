@@ -1,4 +1,4 @@
-inventory_key,rental_key,orderdate_key,remaining,Total_Rental_Amount
+inventory_key,rental_key,rental_date_key,remaining,Total_Rental_Amount
 0,3516,19960101.0,4578,8.97
 0,10084,19960102.0,4578,8.97
 0,13365,19960103.0,4578,8.97

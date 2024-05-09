@@ -1,4 +1,4 @@
-import ProjectBDA.src.hiveconnect.hiveapp as hiveapp
+import src.hiveconnect.hiveapp as hiveapp
 
 DimInventory=hiveapp.CreateDimInventory()
 Load_data_to_DimInventory=hiveapp.LoadData("dimInventory.csv","DimInventory")

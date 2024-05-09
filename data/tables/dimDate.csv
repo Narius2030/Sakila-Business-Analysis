@@ -1,4 +1,4 @@
-orderdate_key,full date,day of week,day num in month,day num overall,day name,day abbrev,weekday flag,week num in year,week num overall,week begin date,week begin date key,month,month num overall,month name,month abbrev,quarter,year,yearmo,fiscal month,fiscal quarter,fiscal year,month end flag
+date_key,full date,day of week,day num in month,day num overall,day name,day abbrev,weekday flag,week num in year,week num overall,week begin date,week begin date key,month,month num overall,month name,month abbrev,quarter,year,yearmo,fiscal month,fiscal quarter,fiscal year,month end flag
 19960101,1/1/1996,1,1,1,Monday,Mon,Y,1,1,1/1/1996,19960101,1,1,January,Jan,1,1996,199601,7,3,1996,N
 19960102,1/2/1996,2,2,2,Tuesday,Tue,Y,1,1,1/1/1996,19960101,1,1,January,Jan,1,1996,199601,7,3,1996,N
 19960103,1/3/1996,3,3,3,Wednesday,Wed,Y,1,1,1/1/1996,19960101,1,1,January,Jan,1,1996,199601,7,3,1996,N

@@ -10,9 +10,11 @@ logging.basicConfig(filename="log.txt",level=logging.DEBUG,
 def LoadData(csv_file_path, tablename):
     try:
         connection = hive.Connection(host="127.0.0.1", port="10000", username='hdang', database='sakila')
-        absolute_csv_file_path = os.path.abspath(csv_file_path).replace("\\", "/")
+        absolute_csv_file_path = os.path.abspath('data').replace("\\", "/")
+        temp_path=os.path.join(absolute_csv_file_path,"tables").replace("\\","/")
+        final_path=os.path.join(temp_path,csv_file_path).replace("\\", "/")
         load_data_sql = f""" 
-        LOAD DATA LOCAL INPATH '/{absolute_csv_file_path}'
+        LOAD DATA LOCAL INPATH '/{final_path}'
         OVERWRITE INTO TABLE {tablename}
         """
         # Execute SQL statement
@@ -32,7 +34,7 @@ def CreateTableFact_Inventory_Analysic():
                                         orderdate_key int,
                                         remaining INT,
                                         Total_Rental_Amount FLOAT
-    3                                   )
+                                              )
                                     ROW FORMAT DELIMITED
                                     FIELDS TERMINATED BY ','
                                     TBLPROPERTIES ('skip.header.line.count'='1')
