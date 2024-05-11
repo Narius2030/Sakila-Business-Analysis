@@ -29,7 +29,7 @@ def create_database(dbname, username):
 def CreateTableDimRental(username):
     
     try:
-        connection = hive.Connection(host="127.0.0.1", port="10000", username=username, database = 'temp')
+        connection = hive.Connection(host="127.0.0.1", port="10000", username=username, database = 'sakila_dwh')
         cur = connection.cursor()
         
         cur.execute(f'''CREATE TABLE Dim_Rental (
