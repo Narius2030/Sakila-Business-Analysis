@@ -1,6 +1,5 @@
 from src.hiveconnect import hiveapp
 
-
 username='buidu'
 
 # Create dimension tables
@@ -9,11 +8,11 @@ hiveapp.CreateTableDimCustomer(username=username)
 DimInventory=hiveapp.CreateDimInventory(username)
 DimDate=hiveapp.CreateTableDimDate(username)
 
-# # Load csv stages to dimension tables
-hiveapp.LoadData('dimRental.csv', 'dim_rental', username=username)
+# Load csv stages to dimension tables
+hiveapp.LoadData('dimRental.txt', 'dim_rental', username=username)
 hiveapp.LoadData('dimCustomer.csv', 'dim_customer', username=username)
-Load_data_to_DimInventory=hiveapp.LoadData("dimInventory.csv","DimInventory",username)
-Load_data_to_DimDate=hiveapp.LoadData("dimDate.csv","DimDate",username)
+Load_data_to_DimInventory=hiveapp.LoadData("dimInventory.csv","DimInventory", username)
+Load_data_to_DimDate=hiveapp.LoadData("dimDate.csv","DimDate", username)
 
 
 # Create and Integrate fact table
