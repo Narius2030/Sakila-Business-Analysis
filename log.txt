@@ -1,189 +1,261 @@
-12-May-24 20:30:20 - Loaded backend module://matplotlib_inline.backend_inline version unknown.
-12-May-24 20:30:20 - Loaded backend module://matplotlib_inline.backend_inline version unknown.
-12-May-24 20:30:20 - findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0.
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans-Bold.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 0.33499999999999996
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSansMono-Oblique.ttf', name='DejaVu Sans Mono', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXSizFourSymBol.ttf', name='STIXSizeFourSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXNonUniIta.ttf', name='STIXNonUnicode', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans-BoldOblique.ttf', name='DejaVu Sans', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 1.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 0.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXSizFourSymReg.ttf', name='STIXSizeFourSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\cmex10.ttf', name='cmex10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\cmsy10.ttf', name='cmsy10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXGeneralBol.ttf', name='STIXGeneral', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSansDisplay.ttf', name='DejaVu Sans Display', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSansMono-BoldOblique.ttf', name='DejaVu Sans Mono', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSerifDisplay.ttf', name='DejaVu Serif Display', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXSizTwoSymBol.ttf', name='STIXSizeTwoSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXSizTwoSymReg.ttf', name='STIXSizeTwoSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXNonUniBol.ttf', name='STIXNonUnicode', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\cmtt10.ttf', name='cmtt10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSerif-Italic.ttf', name='DejaVu Serif', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXGeneral.ttf', name='STIXGeneral', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXGeneralBolIta.ttf', name='STIXGeneral', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSansMono.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXSizFiveSymReg.ttf', name='STIXSizeFiveSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXSizOneSymBol.ttf', name='STIXSizeOneSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXSizOneSymReg.ttf', name='STIXSizeOneSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXNonUni.ttf', name='STIXNonUnicode', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSerif-BoldItalic.ttf', name='DejaVu Serif', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXNonUniBolIta.ttf', name='STIXNonUnicode', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\cmmi10.ttf', name='cmmi10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXGeneralItalic.ttf', name='STIXGeneral', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSansMono-Bold.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXSizThreeSymReg.ttf', name='STIXSizeThreeSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\cmr10.ttf', name='cmr10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSerif-Bold.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans-Oblique.ttf', name='DejaVu Sans', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 1.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\cmss10.ttf', name='cmss10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSerif.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\cmb10.ttf', name='cmb10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXSizThreeSymBol.ttf', name='STIXSizeThreeSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\phagspab.ttf', name='Microsoft PhagsPa', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\comic.ttf', name='Comic Sans MS', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\tahoma.ttf', name='Tahoma', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\verdanaz.ttf', name='Verdana', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 4.971363636363637
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\seguisli.ttf', name='Segoe UI', style='italic', variant='normal', weight=350, stretch='normal', size='scalable')) = 11.0975
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\msjhbd.ttc', name='Microsoft JhengHei', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\LeelaUIb.ttf', name='Leelawadee UI', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\msjh.ttc', name='Microsoft JhengHei', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\msyhl.ttc', name='Microsoft YaHei', style='normal', variant='normal', weight=290, stretch='normal', size='scalable')) = 10.1545
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\YuGothM.ttc', name='Yu Gothic', style='normal', variant='normal', weight=500, stretch='normal', size='scalable')) = 10.145
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\YuGothL.ttc', name='Yu Gothic', style='normal', variant='normal', weight=300, stretch='normal', size='scalable')) = 10.145
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\seguibl.ttf', name='Segoe UI', style='normal', variant='normal', weight=900, stretch='normal', size='scalable')) = 10.525
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\segmdl2.ttf', name='Segoe MDL2 Assets', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\seguibli.ttf', name='Segoe UI', style='italic', variant='normal', weight=900, stretch='normal', size='scalable')) = 11.525
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\palabi.ttf', name='Palatino Linotype', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\YuGothR.ttc', name='Yu Gothic', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\taile.ttf', name='Microsoft Tai Le', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\segoeuil.ttf', name='Segoe UI', style='normal', variant='normal', weight=300, stretch='normal', size='scalable')) = 10.145
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\cour.ttf', name='Courier New', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\gadugib.ttf', name='Gadugi', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\comici.ttf', name='Comic Sans MS', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\Candarali.ttf', name='Candara', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\msgothic.ttc', name='MS Gothic', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\NirmalaB.ttf', name='Nirmala UI', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\simsun.ttc', name='SimSun', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\constanz.ttf', name='Constantia', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\segoesc.ttf', name='Segoe Script', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\consolai.ttf', name='Consolas', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\timesbd.ttf', name='Times New Roman', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\trebucit.ttf', name='Trebuchet MS', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\webdings.ttf', name='Webdings', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\arial.ttf', name='Arial', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 6.413636363636363
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\corbelb.ttf', name='Corbel', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\calibrii.ttf', name='Calibri', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\seguisym.ttf', name='Segoe UI Symbol', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\msjhl.ttc', name='Microsoft JhengHei', style='normal', variant='normal', weight=290, stretch='normal', size='scalable')) = 10.1545
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\lucon.ttf', name='Lucida Console', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\segoeui.ttf', name='Segoe UI', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\georgia.ttf', name='Georgia', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\framd.ttf', name='Franklin Gothic Medium', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\segoeuisl.ttf', name='Segoe UI', style='normal', variant='normal', weight=350, stretch='normal', size='scalable')) = 10.0975
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\ntailub.ttf', name='Microsoft New Tai Lue', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\constanb.ttf', name='Constantia', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\simsunb.ttf', name='SimSun-ExtB', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\gadugi.ttf', name='Gadugi', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\cambriab.ttf', name='Cambria', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\corbelz.ttf', name='Corbel', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\trebucbi.ttf', name='Trebuchet MS', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\Candaraz.ttf', name='Candara', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\pala.ttf', name='Palatino Linotype', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\l_10646.ttf', name='Lucida Sans Unicode', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\seguisb.ttf', name='Segoe UI', style='normal', variant='normal', weight=600, stretch='normal', size='scalable')) = 10.24
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\seguisbi.ttf', name='Segoe UI', style='italic', variant='normal', weight=600, stretch='normal', size='scalable')) = 11.24
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\cambriaz.ttf', name='Cambria', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\msyi.ttf', name='Microsoft Yi Baiti', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\calibriz.ttf', name='Calibri', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\timesbi.ttf', name='Times New Roman', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\consolab.ttf', name='Consolas', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\sylfaen.ttf', name='Sylfaen', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\verdana.ttf', name='Verdana', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 3.6863636363636365
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\corbel.ttf', name='Corbel', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\wingding.ttf', name='Wingdings', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\consolaz.ttf', name='Consolas', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\ebrima.ttf', name='Ebrima', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\arialbi.ttf', name='Arial', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 7.698636363636363
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\Candarai.ttf', name='Candara', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\monbaiti.ttf', name='Mongolian Baiti', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\times.ttf', name='Times New Roman', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\micross.ttf', name='Microsoft Sans Serif', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\malgun.ttf', name='Malgun Gothic', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\segoeuib.ttf', name='Segoe UI', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\Nirmala.ttf', name='Nirmala UI', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\seguihis.ttf', name='Segoe UI Historic', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\YuGothB.ttc', name='Yu Gothic', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\trebucbd.ttf', name='Trebuchet MS', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\verdanai.ttf', name='Verdana', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 4.6863636363636365
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\georgiai.ttf', name='Georgia', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\palab.ttf', name='Palatino Linotype', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\calibrib.ttf', name='Calibri', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\bahnschrift.ttf', name='Bahnschrift', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\calibril.ttf', name='Calibri', style='normal', variant='normal', weight=300, stretch='normal', size='scalable')) = 10.145
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\courbd.ttf', name='Courier New', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\mingliub.ttc', name='MingLiU-ExtB', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\segoeprb.ttf', name='Segoe Print', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\taileb.ttf', name='Microsoft Tai Le', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\Inkfree.ttf', name='Ink Free', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\cambria.ttc', name='Cambria', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\seguili.ttf', name='Segoe UI', style='italic', variant='normal', weight=300, stretch='normal', size='scalable')) = 11.145
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\mmrtextb.ttf', name='Myanmar Text', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\Sitka.ttc', name='Sitka Small', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\SitkaI.ttc', name='Sitka Small', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\msyhbd.ttc', name='Microsoft YaHei', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\segoeuii.ttf', name='Segoe UI', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\holomdl2.ttf', name='HoloLens MDL2 Assets', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\tahomabd.ttf', name='Tahoma', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\constani.ttf', name='Constantia', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\mmrtext.ttf', name='Myanmar Text', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\couri.ttf', name='Courier New', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\SitkaB.ttc', name='Sitka Small', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\Gabriola.ttf', name='Gabriola', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\impact.ttf', name='Impact', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\segoescb.ttf', name='Segoe Script', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\trebuc.ttf', name='Trebuchet MS', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\LeelawUI.ttf', name='Leelawadee UI', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\framdit.ttf', name='Franklin Gothic Medium', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\SitkaZ.ttc', name='Sitka Small', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\ariali.ttf', name='Arial', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 7.413636363636363
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\CascadiaCode.ttf', name='Cascadia Code', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\ebrimabd.ttf', name='Ebrima', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\comicbd.ttf', name='Comic Sans MS', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\Candaral.ttf', name='Candara', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\Candara.ttf', name='Candara', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\symbol.ttf', name='Symbol', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\calibri.ttf', name='Calibri', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\cambriai.ttf', name='Cambria', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\NirmalaS.ttf', name='Nirmala UI', style='normal', variant='normal', weight=350, stretch='normal', size='scalable')) = 10.0975
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\palai.ttf', name='Palatino Linotype', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\ntailu.ttf', name='Microsoft New Tai Lue', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\comicz.ttf', name='Comic Sans MS', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\malgunbd.ttf', name='Malgun Gothic', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\CascadiaMono.ttf', name='Cascadia Mono', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\seguiemj.ttf', name='Segoe UI Emoji', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\constan.ttf', name='Constantia', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\corbeli.ttf', name='Corbel', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\ariblk.ttf', name='Arial', style='normal', variant='normal', weight=900, stretch='normal', size='scalable')) = 6.888636363636364
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\himalaya.ttf', name='Microsoft Himalaya', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\calibrili.ttf', name='Calibri', style='italic', variant='normal', weight=300, stretch='normal', size='scalable')) = 11.145
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\corbell.ttf', name='Corbel', style='normal', variant='normal', weight=300, stretch='normal', size='scalable')) = 10.145
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\timesi.ttf', name='Times New Roman', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\courbi.ttf', name='Courier New', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\segoeuiz.ttf', name='Segoe UI', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\malgunsl.ttf', name='Malgun Gothic', style='normal', variant='normal', weight=300, stretch='normal', size='scalable')) = 10.145
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\msyh.ttc', name='Microsoft YaHei', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\javatext.ttf', name='Javanese Text', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\corbelli.ttf', name='Corbel', style='italic', variant='normal', weight=300, stretch='normal', size='scalable')) = 11.145
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\phagspa.ttf', name='Microsoft PhagsPa', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\Candarab.ttf', name='Candara', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\segoepr.ttf', name='Segoe Print', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\georgiab.ttf', name='Georgia', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\verdanab.ttf', name='Verdana', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 3.9713636363636367
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\LeelUIsl.ttf', name='Leelawadee UI', style='normal', variant='normal', weight=350, stretch='normal', size='scalable')) = 10.0975
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\consola.ttf', name='Consolas', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\georgiaz.ttf', name='Georgia', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\mvboli.ttf', name='MV Boli', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
-12-May-24 20:30:20 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\arialbd.ttf', name='Arial', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 6.698636363636363
-12-May-24 20:30:20 - findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('c:\\Education\\Uni\\BigData\\Final_Project\\Data-Mining-with-ApacheHive\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
-12-May-24 20:30:20 - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
-12-May-24 20:30:20 - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+12-May-24 22:51:07 - No module named 'thrift_sasl'
+12-May-24 22:51:07 - No module named 'thrift_sasl'
+12-May-24 22:51:07 - No module named 'thrift_sasl'
+12-May-24 22:51:07 - No module named 'thrift_sasl'
+12-May-24 22:51:07 - No module named 'thrift_sasl'
+12-May-24 22:51:07 - No module named 'thrift_sasl'
+12-May-24 22:51:07 - No module named 'thrift_sasl'
+12-May-24 22:51:07 - No module named 'thrift_sasl'
+12-May-24 22:51:07 - No module named 'thrift_sasl'
+12-May-24 22:51:07 - No module named 'thrift_sasl'
+12-May-24 22:51:07 - No module named 'thrift_sasl'
+12-May-24 22:51:07 - No module named 'thrift_sasl'
+12-May-24 22:51:07 - No module named 'thrift_sasl'
+12-May-24 22:51:39 - TOpenSessionResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), serverProtocolVersion=5, sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'\xdd\xc80*\x84\xdfF\xbe\x90Ed~\x0b(\x16L', secret=b'\x98\xef\x94\x0b\xccoED\x9cg\r\xc0\xd4=\xc7\xce')), configuration={'hive.server2.thrift.resultset.default.fetch.size': '1000'})
+12-May-24 22:51:39 - USE `sakila_dwh`
+12-May-24 22:51:39 - TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'\xdd\xc80*\x84\xdfF\xbe\x90Ed~\x0b(\x16L', secret=b'\x98\xef\x94\x0b\xccoED\x9cg\r\xc0\xd4=\xc7\xce')), statement='USE `sakila_dwh`', confOverlay=None, runAsync=False, queryTimeout=0)
+12-May-24 22:51:43 - TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\x8e\xf9\xc3\x19X\xdeJ{\x97\xa5\x06\x86*\xa5\r\xf9', secret=b'\xdd\\\x9f_\xd6\xd1F\xa0\x9e\xe0\x03of^,\xe3'), operationType=0, hasResultSet=False, modifiedRowCount=None))
+12-May-24 22:51:43 - TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))
+12-May-24 22:51:43 - CREATE TABLE Dim_Rental (
+                            rental_key INT,
+                            rental_id INT,
+                            rental_date DATE,
+                            inventory_id INT,
+                            customer_id INT,
+                            return_date DATE,
+                            staff_id INT,
+                            amount FLOAT,
+                            payment_date DATE
+                        )
+                        PARTITIONED BY (rental_month INT)
+                        ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+                        STORED AS TEXTFILE
+12-May-24 22:51:43 - TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'\xdd\xc80*\x84\xdfF\xbe\x90Ed~\x0b(\x16L', secret=b'\x98\xef\x94\x0b\xccoED\x9cg\r\xc0\xd4=\xc7\xce')), statement="CREATE TABLE Dim_Rental (\n                            rental_key INT,\n                            rental_id INT,\n                            rental_date DATE,\n                            inventory_id INT,\n                            customer_id INT,\n                            return_date DATE,\n                            staff_id INT,\n                            amount FLOAT,\n                            payment_date DATE\n                        )\n                        PARTITIONED BY (rental_month INT)\n                        ROW FORMAT DELIMITED FIELDS TERMINATED BY ','\n                        STORED AS TEXTFILE", confOverlay=None, runAsync=False, queryTimeout=0)
+12-May-24 22:51:44 - TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'L\xce\xa5M\xd4kG\x14\xb0\xda\x99\x83C\x15 \xd2', secret=b'\x9c\x1aa*\xb3SC|\xa2\x1b\x90\xa6@\x83\x94\x06'), operationType=0, hasResultSet=False, modifiedRowCount=None))
+12-May-24 22:51:44 - Table:- DimRental is created successfully
+12-May-24 22:51:44 - TOpenSessionResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), serverProtocolVersion=5, sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'\xec\xda\x97)\xf5\xc5GY\xb5\x1e\xf3r\xc9\xf3"\xa5', secret=b'5\x99\x1c\xf2\xf0\x8dG\xf2\xb3a\xc0Y\xd1Y\xbaV')), configuration={'hive.server2.thrift.resultset.default.fetch.size': '1000'})
+12-May-24 22:51:44 - USE `sakila_dwh`
+12-May-24 22:51:44 - TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'\xec\xda\x97)\xf5\xc5GY\xb5\x1e\xf3r\xc9\xf3"\xa5', secret=b'5\x99\x1c\xf2\xf0\x8dG\xf2\xb3a\xc0Y\xd1Y\xbaV')), statement='USE `sakila_dwh`', confOverlay=None, runAsync=False, queryTimeout=0)
+12-May-24 22:51:44 - TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'm<\x18!\xeccF\x84\x98\x98\xc4.cH\x01\t', secret=b'\xd6D\x8d\x84\xa8\x1bJ\x1b\xa1!\xe2\xf5y\x91t\xc0'), operationType=0, hasResultSet=False, modifiedRowCount=None))
+12-May-24 22:51:44 - TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))
+12-May-24 22:51:44 - CREATE TABLE Dim_Customer (
+                            customer_key INT,
+                            customer_id INT,
+                            store_id INT,
+                            address_id INT,
+                            active INT,
+                            full_name string,
+                            city string,
+                            country string
+                        )
+                        CLUSTERED BY (customer_id) INTO 6 BUCKETS
+                        ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+                        STORED AS TEXTFILE
+12-May-24 22:51:44 - TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'\xec\xda\x97)\xf5\xc5GY\xb5\x1e\xf3r\xc9\xf3"\xa5', secret=b'5\x99\x1c\xf2\xf0\x8dG\xf2\xb3a\xc0Y\xd1Y\xbaV')), statement="CREATE TABLE Dim_Customer (\n                            customer_key INT,\n                            customer_id INT,\n                            store_id INT,\n                            address_id INT,\n                            active INT,\n                            full_name string,\n                            city string,\n                            country string\n                        )\n                        CLUSTERED BY (customer_id) INTO 6 BUCKETS\n                        ROW FORMAT DELIMITED FIELDS TERMINATED BY ','\n                        STORED AS TEXTFILE", confOverlay=None, runAsync=False, queryTimeout=0)
+12-May-24 22:51:45 - TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'&T\x80\xe2\x9d\xf9J\xc8\x9b\xf2\xc1\xda\xfa\x8e\xa6\xef', secret=b'E\xb7/\xd7\xb1yD{\xb9\xd4A\x83j\x81q\x85'), operationType=0, hasResultSet=False, modifiedRowCount=None))
+12-May-24 22:51:45 - Table:- DimCustomer is created successfully
+12-May-24 22:51:45 - TOpenSessionResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), serverProtocolVersion=5, sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'\xd8\xae\xf4\xe4\xcb\xcdG\x08\xa4\x1b\x9e\xfe\x87Bt\xf9', secret=b'\x03u\xbb\x81\x99\xcdBJ\x83\x86\x8d~\xe5\x1c\xd0\x7f')), configuration={'hive.server2.thrift.resultset.default.fetch.size': '1000'})
+12-May-24 22:51:45 - USE `sakila_dwh`
+12-May-24 22:51:45 - TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'\xd8\xae\xf4\xe4\xcb\xcdG\x08\xa4\x1b\x9e\xfe\x87Bt\xf9', secret=b'\x03u\xbb\x81\x99\xcdBJ\x83\x86\x8d~\xe5\x1c\xd0\x7f')), statement='USE `sakila_dwh`', confOverlay=None, runAsync=False, queryTimeout=0)
+12-May-24 22:51:45 - TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'3\xe3\x00\x19\xd0\xe2G\xf2\x87U\xca\xd9I\xd9\xfb\x8d', secret=b'\xe8/<\x97J|Db\x8c\xb4\x94\xd2\xd7\\}\x0f'), operationType=0, hasResultSet=False, modifiedRowCount=None))
+12-May-24 22:51:45 - TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))
+12-May-24 22:51:45 - 
+        CREATE TABLE DimInventory (
+            inventory_key INT,
+            inventory_id INT,
+            title STRING,
+            description STRING,
+            release_year INT,
+            language STRING,
+            rental_duration INT,
+            rental_rate DECIMAL(5,2),
+            length INT,
+            replacement_cost DECIMAL(5,2),
+            rating STRING,
+            special_features STRING,
+            catalogy_name STRING
+        )
+        ROW FORMAT DELIMITED
+        FIELDS TERMINATED BY ','
+        STORED AS TEXTFILE
+        TBLPROPERTIES ('skip.header.line.count'='1')
+        
+12-May-24 22:51:45 - TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'\xd8\xae\xf4\xe4\xcb\xcdG\x08\xa4\x1b\x9e\xfe\x87Bt\xf9', secret=b'\x03u\xbb\x81\x99\xcdBJ\x83\x86\x8d~\xe5\x1c\xd0\x7f')), statement="\n        CREATE TABLE DimInventory (\n            inventory_key INT,\n            inventory_id INT,\n            title STRING,\n            description STRING,\n            release_year INT,\n            language STRING,\n            rental_duration INT,\n            rental_rate DECIMAL(5,2),\n            length INT,\n            replacement_cost DECIMAL(5,2),\n            rating STRING,\n            special_features STRING,\n            catalogy_name STRING\n        )\n        ROW FORMAT DELIMITED\n        FIELDS TERMINATED BY ','\n        STORED AS TEXTFILE\n        TBLPROPERTIES ('skip.header.line.count'='1')\n        ", confOverlay=None, runAsync=False, queryTimeout=0)
+12-May-24 22:51:45 - TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\x82\xbc\xc3F\xb3\xa1M\xf7\x98\xf0\x86\xf1\xccbz\xdd', secret=b'&\xb3\xe7\xe1\xd3aA;\xab\xfaD\x19\x10Qr\xc2'), operationType=0, hasResultSet=False, modifiedRowCount=None))
+12-May-24 22:51:45 - TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))
+12-May-24 22:51:45 - TOpenSessionResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), serverProtocolVersion=5, sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'\x93q.\x00qfE\x16\xb7\xcd\x1c4\xe8\x84\x92\x93', secret=b'\xf8\xf4\xe8\x04\x14\xdfN\xde\xa0S=\xb7\x06Z?s')), configuration={'hive.server2.thrift.resultset.default.fetch.size': '1000'})
+12-May-24 22:51:45 - USE `sakila_dwh`
+12-May-24 22:51:45 - TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'\x93q.\x00qfE\x16\xb7\xcd\x1c4\xe8\x84\x92\x93', secret=b'\xf8\xf4\xe8\x04\x14\xdfN\xde\xa0S=\xb7\x06Z?s')), statement='USE `sakila_dwh`', confOverlay=None, runAsync=False, queryTimeout=0)
+12-May-24 22:51:45 - TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\xe5\x8d\xacEv\x85K#\x9euOjti\xd5\xdc', secret=b'\xe8\xffs\xd1&\xa0Br\x99W\x02\x15S\xddY\xcf'), operationType=0, hasResultSet=False, modifiedRowCount=None))
+12-May-24 22:51:45 - TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))
+12-May-24 22:51:45 - CREATE TABLE IF NOT EXISTS DimDate (
+                                    date_key int,
+                                    full_date STRING,
+                                    day_of_week INT,
+                                    day_num_in_month INT,
+                                    day_num_overall INT,
+                                    day_name STRING,
+                                    day_abbrev STRING,
+                                    weekday_flag STRING,
+                                    week_num_in_year INT,
+                                    week_num_overall INT,
+                                    week_begin_date STRING,
+                                    week_begin_date_key STRING,
+                                    month STRING,
+                                    month_num_overall INT,
+                                    month_name STRING,
+                                    month_abbrev STRING,
+                                    quarter INT,
+                                    year INT,
+                                    year_month STRING,
+                                    fiscal_month INT,
+                                    fiscal_quarter INT,
+                                    fiscal_year INT,
+                                    month_end_flag STRING
+                                )
+                                ROW FORMAT DELIMITED
+                                FIELDS TERMINATED BY ','
+                                STORED AS TEXTFILE
+                                TBLPROPERTIES ('skip.header.line.count'='1')
+                                
+12-May-24 22:51:45 - TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'\x93q.\x00qfE\x16\xb7\xcd\x1c4\xe8\x84\x92\x93', secret=b'\xf8\xf4\xe8\x04\x14\xdfN\xde\xa0S=\xb7\x06Z?s')), statement="CREATE TABLE IF NOT EXISTS DimDate (\n                                    date_key int,\n                                    full_date STRING,\n                                    day_of_week INT,\n                                    day_num_in_month INT,\n                                    day_num_overall INT,\n                                    day_name STRING,\n                                    day_abbrev STRING,\n                                    weekday_flag STRING,\n                                    week_num_in_year INT,\n                                    week_num_overall INT,\n                                    week_begin_date STRING,\n                                    week_begin_date_key STRING,\n                                    month STRING,\n                                    month_num_overall INT,\n                                    month_name STRING,\n                                    month_abbrev STRING,\n                                    quarter INT,\n                                    year INT,\n                                    year_month STRING,\n                                    fiscal_month INT,\n                                    fiscal_quarter INT,\n                                    fiscal_year INT,\n                                    month_end_flag STRING\n                                )\n                                ROW FORMAT DELIMITED\n                                FIELDS TERMINATED BY ','\n                                STORED AS TEXTFILE\n                                TBLPROPERTIES ('skip.header.line.count'='1')\n                                ", confOverlay=None, runAsync=False, queryTimeout=0)
+12-May-24 22:51:46 - TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b"\xc6\xc3*-%\xc0@'\x8dNH\x8c\xc4\xc0\x0e2", secret=b'\x19U\x9e8\xb7\x81@`\xae\xd9\xe1\xb3(\x84\xf3Z'), operationType=0, hasResultSet=False, modifiedRowCount=None))
+12-May-24 22:51:46 - TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))
+12-May-24 22:51:46 - TOpenSessionResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), serverProtocolVersion=5, sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'\xe1=\x81D\x00\xa7@\x01\xb3\x1e\xe8\xc4\x9b\x1aF\xb5', secret=b'\xb0`\x0ef\xbe\xa5F\xf6\xbc\x9fEW\xb0\xd4J\xc0')), configuration={'hive.server2.thrift.resultset.default.fetch.size': '1000'})
+12-May-24 22:51:46 - USE `sakila_dwh`
+12-May-24 22:51:46 - TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'\xe1=\x81D\x00\xa7@\x01\xb3\x1e\xe8\xc4\x9b\x1aF\xb5', secret=b'\xb0`\x0ef\xbe\xa5F\xf6\xbc\x9fEW\xb0\xd4J\xc0')), statement='USE `sakila_dwh`', confOverlay=None, runAsync=False, queryTimeout=0)
+12-May-24 22:51:46 - TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\xe3Zg\xbc\xdc\x8fG\x99\xab\x8f*H\x08\x92^\xb7', secret=b'E\xf9\xd6\xc17\xffM\xa7\x9d\xc6\x12?\xe1\xfa\xc1/'), operationType=0, hasResultSet=False, modifiedRowCount=None))
+12-May-24 22:51:46 - TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))
+12-May-24 22:51:46 -  
+                        LOAD DATA LOCAL INPATH '/D:/N2K1/Data-Mining-with-ApacheHive/data/tables/dimRental.txt'
+                        OVERWRITE INTO TABLE dim_rental
+                        
+12-May-24 22:51:46 - TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'\xe1=\x81D\x00\xa7@\x01\xb3\x1e\xe8\xc4\x9b\x1aF\xb5', secret=b'\xb0`\x0ef\xbe\xa5F\xf6\xbc\x9fEW\xb0\xd4J\xc0')), statement=" \n                        LOAD DATA LOCAL INPATH '/D:/N2K1/Data-Mining-with-ApacheHive/data/tables/dimRental.txt'\n                        OVERWRITE INTO TABLE dim_rental\n                        ", confOverlay=None, runAsync=False, queryTimeout=0)
+12-May-24 22:53:16 - TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'R\xfb\x16\xe3\xce\x80D\x15\x82\xdf\rg\xa7\r[\x0f', secret=b'\xf2\xf6\xed {\xc4B\xfd\xab\xaaP\xe1\xd7\x02\x17\xd9'), operationType=0, hasResultSet=False, modifiedRowCount=None))
+12-May-24 22:53:16 - TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))
+12-May-24 22:53:16 - TOpenSessionResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), serverProtocolVersion=5, sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'swRK\x825J\x03\xb4\xb6\x12\xf0~S\xf6-', secret=b'>r\x08\xe6\x15\xd7N\x87\xb9@\x1aU\x83\xeb\xf0 ')), configuration={'hive.server2.thrift.resultset.default.fetch.size': '1000'})
+12-May-24 22:53:16 - USE `sakila_dwh`
+12-May-24 22:53:16 - TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'swRK\x825J\x03\xb4\xb6\x12\xf0~S\xf6-', secret=b'>r\x08\xe6\x15\xd7N\x87\xb9@\x1aU\x83\xeb\xf0 ')), statement='USE `sakila_dwh`', confOverlay=None, runAsync=False, queryTimeout=0)
+12-May-24 22:53:16 - TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\xb8Z\xe8\x93G.Go\xb4{\xd9\xf5Ju\x9c*', secret=b'b\xc5\xd9\x18\x97\xd5F\xf7\xa7\xa9#;J\x8c\xb7\x90'), operationType=0, hasResultSet=False, modifiedRowCount=None))
+12-May-24 22:53:16 - TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))
+12-May-24 22:53:16 -  
+                        LOAD DATA LOCAL INPATH '/D:/N2K1/Data-Mining-with-ApacheHive/data/tables/dimCustomer.csv'
+                        OVERWRITE INTO TABLE dim_customer
+                        
+12-May-24 22:53:16 - TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'swRK\x825J\x03\xb4\xb6\x12\xf0~S\xf6-', secret=b'>r\x08\xe6\x15\xd7N\x87\xb9@\x1aU\x83\xeb\xf0 ')), statement=" \n                        LOAD DATA LOCAL INPATH '/D:/N2K1/Data-Mining-with-ApacheHive/data/tables/dimCustomer.csv'\n                        OVERWRITE INTO TABLE dim_customer\n                        ", confOverlay=None, runAsync=False, queryTimeout=0)
+12-May-24 22:56:59 - TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'V\x93\x88=q\x84Gj\x9ae\x81\xc6\xf6\xdb\xd6\xcb', secret=b'\x19\x19\x9a\x0c]\nE+\x8c\xa7b\r\xc7\x93}\xa1'), operationType=0, hasResultSet=False, modifiedRowCount=None))
+12-May-24 22:56:59 - TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))
+12-May-24 22:56:59 - TOpenSessionResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), serverProtocolVersion=5, sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b"\xc53\xac\xfd\x1e'A\xf3\xb7\xfbv.\x10\x95\x0f\xaf", secret=b'\xdf\xe3\x06)\xb4!F\xaa\x99y\x15\xc7(\xf1\x90H')), configuration={'hive.server2.thrift.resultset.default.fetch.size': '1000'})
+12-May-24 22:56:59 - USE `sakila_dwh`
+12-May-24 22:56:59 - TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b"\xc53\xac\xfd\x1e'A\xf3\xb7\xfbv.\x10\x95\x0f\xaf", secret=b'\xdf\xe3\x06)\xb4!F\xaa\x99y\x15\xc7(\xf1\x90H')), statement='USE `sakila_dwh`', confOverlay=None, runAsync=False, queryTimeout=0)
+12-May-24 22:56:59 - TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\xa2\xf7\x9e}\xa9sCy\x98\xe1B\x93\xd8\xb3~z', secret=b'\xa7\xa08g\xf26HJ\xb7\xe5R#\xfbS\x9d\xb6'), operationType=0, hasResultSet=False, modifiedRowCount=None))
+12-May-24 22:56:59 - TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))
+12-May-24 22:56:59 -  
+                        LOAD DATA LOCAL INPATH '/D:/N2K1/Data-Mining-with-ApacheHive/data/tables/dimInventory.csv'
+                        OVERWRITE INTO TABLE DimInventory
+                        
+12-May-24 22:56:59 - TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b"\xc53\xac\xfd\x1e'A\xf3\xb7\xfbv.\x10\x95\x0f\xaf", secret=b'\xdf\xe3\x06)\xb4!F\xaa\x99y\x15\xc7(\xf1\x90H')), statement=" \n                        LOAD DATA LOCAL INPATH '/D:/N2K1/Data-Mining-with-ApacheHive/data/tables/dimInventory.csv'\n                        OVERWRITE INTO TABLE DimInventory\n                        ", confOverlay=None, runAsync=False, queryTimeout=0)
+12-May-24 22:56:59 - TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\xff\x84]\x9a\x9c\xf0D\xb5\xb5\xb3\xaeI\xd5\xde\xb1v', secret=b'B6<\x12T\x83G\x9d\x89\xe6\x05\xa69I\x16D'), operationType=0, hasResultSet=False, modifiedRowCount=None))
+12-May-24 22:56:59 - TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))
+12-May-24 22:56:59 - TOpenSessionResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), serverProtocolVersion=5, sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'\x97:\xda\xe8\xd63L<\x86\xe8V\x01\xde\x9b<\xea', secret=b'>\x85\x83lQ\xe7A\x10\x85Y\xcf\x81\xb2{\x1cm')), configuration={'hive.server2.thrift.resultset.default.fetch.size': '1000'})
+12-May-24 22:56:59 - USE `sakila_dwh`
+12-May-24 22:56:59 - TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'\x97:\xda\xe8\xd63L<\x86\xe8V\x01\xde\x9b<\xea', secret=b'>\x85\x83lQ\xe7A\x10\x85Y\xcf\x81\xb2{\x1cm')), statement='USE `sakila_dwh`', confOverlay=None, runAsync=False, queryTimeout=0)
+12-May-24 22:57:00 - TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\x90\x03\xb6\xa5\xe3.D \x82\xef\xb1h\x95z\xb4k', secret=b')\xa7\xf2\xf2\x10\xf7O?\xa2\\n\xae@\xe4Z\xc5'), operationType=0, hasResultSet=False, modifiedRowCount=None))
+12-May-24 22:57:00 - TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))
+12-May-24 22:57:00 -  
+                        LOAD DATA LOCAL INPATH '/D:/N2K1/Data-Mining-with-ApacheHive/data/tables/dimDate.csv'
+                        OVERWRITE INTO TABLE DimDate
+                        
+12-May-24 22:57:00 - TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'\x97:\xda\xe8\xd63L<\x86\xe8V\x01\xde\x9b<\xea', secret=b'>\x85\x83lQ\xe7A\x10\x85Y\xcf\x81\xb2{\x1cm')), statement=" \n                        LOAD DATA LOCAL INPATH '/D:/N2K1/Data-Mining-with-ApacheHive/data/tables/dimDate.csv'\n                        OVERWRITE INTO TABLE DimDate\n                        ", confOverlay=None, runAsync=False, queryTimeout=0)
+12-May-24 22:57:00 - TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'k\x97\xd6\xa1\xf9\x1aD\xa7\xa4\xdc\x8b]F\x0b\x96\xd0', secret=b'-,\x19\x18_"IO\x9b\xb3\xff?\xe3\xf0\x04\xf2'), operationType=0, hasResultSet=False, modifiedRowCount=None))
+12-May-24 22:57:00 - TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))
+12-May-24 22:57:00 - TOpenSessionResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), serverProtocolVersion=5, sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'\x00\xe1M\xec\x9a\x9eI\x15\x90\x9d%\x91\xb3\x9b\xc3$', secret=b'\xf9@\x99|\xb2hKr\xbe\xd9\xe8\xd3Rz\xec\x8b')), configuration={'hive.server2.thrift.resultset.default.fetch.size': '1000'})
+12-May-24 22:57:00 - USE `sakila_dwh`
+12-May-24 22:57:00 - TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'\x00\xe1M\xec\x9a\x9eI\x15\x90\x9d%\x91\xb3\x9b\xc3$', secret=b'\xf9@\x99|\xb2hKr\xbe\xd9\xe8\xd3Rz\xec\x8b')), statement='USE `sakila_dwh`', confOverlay=None, runAsync=False, queryTimeout=0)
+12-May-24 22:57:00 - TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'S\x98\xc63\xfd\xc1N\x18\x8f0\xf9a\x9b\xa0u\x81', secret=b'\xa9e\x0e\x9a\x83\xfbF\xad\xbb\xda\x8e\xd7\xc5B/\xff'), operationType=0, hasResultSet=False, modifiedRowCount=None))
+12-May-24 22:57:00 - TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))
+12-May-24 22:57:00 - CREATE TABLE Fact_Segment (
+                            customer_id INT,
+                            city string,
+                            country string,
+                            active TINYINT,
+                            full_name string,
+                            rental_id INT,
+                            amount FLOAT,
+                            rental_date DATE,
+                            first_date DATE,
+                            recency INT,
+                            monetary FLOAT,
+                            frequency INT
+                        )
+                        CLUSTERED BY (customer_id) INTO 8 BUCKETS
+                        ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+                        STORED AS TEXTFILE
+12-May-24 22:57:00 - TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'\x00\xe1M\xec\x9a\x9eI\x15\x90\x9d%\x91\xb3\x9b\xc3$', secret=b'\xf9@\x99|\xb2hKr\xbe\xd9\xe8\xd3Rz\xec\x8b')), statement="CREATE TABLE Fact_Segment (\n                            customer_id INT,\n                            city string,\n                            country string,\n                            active TINYINT,\n                            full_name string,\n                            rental_id INT,\n                            amount FLOAT,\n                            rental_date DATE,\n                            first_date DATE,\n                            recency INT,\n                            monetary FLOAT,\n                            frequency INT\n                        )\n                        CLUSTERED BY (customer_id) INTO 8 BUCKETS\n                        ROW FORMAT DELIMITED FIELDS TERMINATED BY ','\n                        STORED AS TEXTFILE", confOverlay=None, runAsync=False, queryTimeout=0)
+12-May-24 22:57:01 - TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'G\x96G\xbb9DG\x89\xbfU\x11\x81\xa2\x15z\x8c', secret=b'\xa1\xe4\xba1\xc2/M\xea\xb4\x14l\xaf\x8fU\xa8\xfe'), operationType=0, hasResultSet=False, modifiedRowCount=None))
+12-May-24 22:57:01 - Table:- FactSegment is created successfully
+12-May-24 22:57:01 - TOpenSessionResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), serverProtocolVersion=5, sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'&\xc3\xdc\xc5\xf4\xa4C\xf5\xbf!\xc2\xaf\x93\xac \x9e', secret=b'\xb3\xfd\xf7\xc9!\x91K\xce\xb9m\xdd\x0f\xb2\x1d\r@')), configuration={'hive.server2.thrift.resultset.default.fetch.size': '1000'})
+12-May-24 22:57:01 - USE `sakila_dwh`
+12-May-24 22:57:01 - TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'&\xc3\xdc\xc5\xf4\xa4C\xf5\xbf!\xc2\xaf\x93\xac \x9e', secret=b'\xb3\xfd\xf7\xc9!\x91K\xce\xb9m\xdd\x0f\xb2\x1d\r@')), statement='USE `sakila_dwh`', confOverlay=None, runAsync=False, queryTimeout=0)
+12-May-24 22:57:01 - TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\xa4\xad\x10\xa23i@F\x83\xa7\xf6V\xed/\x1e\xc2', secret=b'\xcf}\x88\x17!\x1bD\xbc\xac\xe8u+\x80X=\x89'), operationType=0, hasResultSet=False, modifiedRowCount=None))
+12-May-24 22:57:01 - TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))
+12-May-24 22:57:01 - INSERT INTO TABLE Fact_Segment
+                        SELECT
+                            c.customer_id, c.city, c.country, c.active, c.full_name,
+                            r.rental_id, r.amount, r.rental_date,
+                            (SELECT MIN(rental_date) FROM Dim_Rental sub_r WHERE sub_r.customer_id = c.customer_id) AS first_date,
+                            DATEDIFF(
+                                (SELECT MAX(rental_date) FROM Dim_Rental sub_r WHERE sub_r.customer_id = c.customer_id),
+                                (SELECT MIN(rental_date) FROM Dim_Rental sub_r WHERE sub_r.customer_id = c.customer_id)
+                            ) AS recency,
+                            (SELECT SUM(amount) FROM dim_rental sub_r WHERE sub_r.customer_id = c.customer_id) AS monetary,
+                            (SELECT COUNT(rental_id) FROM dim_rental sub_r WHERE sub_r.customer_id = c.customer_id) AS frequency
+                        FROM dim_customer c
+                        JOIN dim_rental r ON r.customer_id = c.customer_id
+12-May-24 22:57:01 - TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'&\xc3\xdc\xc5\xf4\xa4C\xf5\xbf!\xc2\xaf\x93\xac \x9e', secret=b'\xb3\xfd\xf7\xc9!\x91K\xce\xb9m\xdd\x0f\xb2\x1d\r@')), statement='INSERT INTO TABLE Fact_Segment\n                        SELECT\n                            c.customer_id, c.city, c.country, c.active, c.full_name,\n                            r.rental_id, r.amount, r.rental_date,\n                            (SELECT MIN(rental_date) FROM Dim_Rental sub_r WHERE sub_r.customer_id = c.customer_id) AS first_date,\n                            DATEDIFF(\n                                (SELECT MAX(rental_date) FROM Dim_Rental sub_r WHERE sub_r.customer_id = c.customer_id),\n                                (SELECT MIN(rental_date) FROM Dim_Rental sub_r WHERE sub_r.customer_id = c.customer_id)\n                            ) AS recency,\n                            (SELECT SUM(amount) FROM dim_rental sub_r WHERE sub_r.customer_id = c.customer_id) AS monetary,\n                            (SELECT COUNT(rental_id) FROM dim_rental sub_r WHERE sub_r.customer_id = c.customer_id) AS frequency\n                        FROM dim_customer c\n                        JOIN dim_rental r ON r.customer_id = c.customer_id', confOverlay=None, runAsync=False, queryTimeout=0)
+12-May-24 23:08:54 - TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\x13\xb6e\xfa\xe6XJ\x12\xbcw9\x9d\xb2\x87T\x01', secret=b'n\xc0\x9bG\xbb\rG\x9e\x8f\xe0k%\xba\x8a\xdfb'), operationType=0, hasResultSet=False, modifiedRowCount=None))
+12-May-24 23:08:54 - Table:- FactSegment is integrated successfully
+12-May-24 23:08:54 - TOpenSessionResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), serverProtocolVersion=5, sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'\x12\xea`\x15e\xe3A\x8b\xaf=\xf5A\x04\x16$^', secret=b'\x96\xe74\xd4^\x92@\x05\x89\xd8\xb1\xd2\xce\x904\x18')), configuration={'hive.server2.thrift.resultset.default.fetch.size': '1000'})
+12-May-24 23:08:54 - USE `sakila_dwh`
+12-May-24 23:08:54 - TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'\x12\xea`\x15e\xe3A\x8b\xaf=\xf5A\x04\x16$^', secret=b'\x96\xe74\xd4^\x92@\x05\x89\xd8\xb1\xd2\xce\x904\x18')), statement='USE `sakila_dwh`', confOverlay=None, runAsync=False, queryTimeout=0)
+12-May-24 23:08:54 - TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\xadCrE\x07\x8c@#\xaa\x11\xe4\xff\x0ba\xdd[', secret=b'\xf9\x0fX\x9b\x1ekFC\x93"]\xfb]\xa5\xa6\x8e'), operationType=0, hasResultSet=False, modifiedRowCount=None))
+12-May-24 23:08:54 - TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))
+12-May-24 23:08:54 - CREATE TABLE Fact_Inventory_Analysis_TextFile (
+                                        inventory_key INT,
+                                        rental_key INT,
+                                        rental_date_key int,
+                                        remaining INT,
+                                        Total_Rental_Amount FLOAT 
+                                              )
+                                    ROW FORMAT DELIMITED
+                                    FIELDS TERMINATED BY ','
+                                    STORED AS TEXTFILE
+                                    TBLPROPERTIES ('skip.header.line.count'='1')
+                                
+12-May-24 23:08:54 - TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'\x12\xea`\x15e\xe3A\x8b\xaf=\xf5A\x04\x16$^', secret=b'\x96\xe74\xd4^\x92@\x05\x89\xd8\xb1\xd2\xce\x904\x18')), statement="CREATE TABLE Fact_Inventory_Analysis_TextFile (\n                                        inventory_key INT,\n                                        rental_key INT,\n                                        rental_date_key int,\n                                        remaining INT,\n                                        Total_Rental_Amount FLOAT \n                                              )\n                                    ROW FORMAT DELIMITED\n                                    FIELDS TERMINATED BY ','\n                                    STORED AS TEXTFILE\n                                    TBLPROPERTIES ('skip.header.line.count'='1')\n                                ", confOverlay=None, runAsync=False, queryTimeout=0)
+12-May-24 23:08:55 - TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\xa9\xcf9 \x95nI$\x9b\x8d,\xecl\xecr\xa5', secret=b'>\x04P\xb2\xeb\xd7Dx\xad%\x14S\x9b\xd2\xc2\x89'), operationType=0, hasResultSet=False, modifiedRowCount=None))
+12-May-24 23:08:55 - TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))
+12-May-24 23:08:55 - TOpenSessionResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), serverProtocolVersion=5, sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'\xe7N\x1b\xef\x1f!N\x84\x9f\xc6\xf1M\xba=>\xb8', secret=b'q\xfd\xfd\xef\xcf\xb9A\xd6\xb1B\xc3ssA;\xfa')), configuration={'hive.server2.thrift.resultset.default.fetch.size': '1000'})
+12-May-24 23:08:55 - USE `sakila_dwh`
+12-May-24 23:08:55 - TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'\xe7N\x1b\xef\x1f!N\x84\x9f\xc6\xf1M\xba=>\xb8', secret=b'q\xfd\xfd\xef\xcf\xb9A\xd6\xb1B\xc3ssA;\xfa')), statement='USE `sakila_dwh`', confOverlay=None, runAsync=False, queryTimeout=0)
+12-May-24 23:08:55 - TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'*\xc1\xacG|\xe8H\x99\xa3\x8d,\xcfN\x8d\xf4\xfa', secret=b'\xd0\n\x06\xbe\x01xB+\xae\xfc\x9b\xeb\x12\xb7\x16@'), operationType=0, hasResultSet=False, modifiedRowCount=None))
+12-May-24 23:08:55 - TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))
+12-May-24 23:08:55 -  
+                        LOAD DATA LOCAL INPATH '/D:/N2K1/Data-Mining-with-ApacheHive/data/tables/Fact_Inventory_Analysis.csv'
+                        OVERWRITE INTO TABLE Fact_Inventory_Analysis_TextFile
+                        
+12-May-24 23:08:55 - TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'\xe7N\x1b\xef\x1f!N\x84\x9f\xc6\xf1M\xba=>\xb8', secret=b'q\xfd\xfd\xef\xcf\xb9A\xd6\xb1B\xc3ssA;\xfa')), statement=" \n                        LOAD DATA LOCAL INPATH '/D:/N2K1/Data-Mining-with-ApacheHive/data/tables/Fact_Inventory_Analysis.csv'\n                        OVERWRITE INTO TABLE Fact_Inventory_Analysis_TextFile\n                        ", confOverlay=None, runAsync=False, queryTimeout=0)
+12-May-24 23:08:55 - TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'\x9f*O\x80\xaf\xf3N7\x9d)\xb2\xbc\xb3>\xa7\xfd', secret=b'B\xf3\xae\xe0\x05)M\xea\x9f)\x8c\xf9d\xb7\xc6\x7f'), operationType=0, hasResultSet=False, modifiedRowCount=None))
+12-May-24 23:08:55 - TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))
+12-May-24 23:08:55 - TOpenSessionResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), serverProtocolVersion=5, sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'\xbb\xa7\x90\xcf\xb9\x03H\x86\x87\xe6\xf7S\xd5\x9a\xa5x', secret=b'\xedCvn\xf5gL\xfb\x95\xc8\xc3\x92\xb1\xbeD~')), configuration={'hive.server2.thrift.resultset.default.fetch.size': '1000'})
+12-May-24 23:08:55 - USE `sakila_dwh`
+12-May-24 23:08:55 - TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'\xbb\xa7\x90\xcf\xb9\x03H\x86\x87\xe6\xf7S\xd5\x9a\xa5x', secret=b'\xedCvn\xf5gL\xfb\x95\xc8\xc3\x92\xb1\xbeD~')), statement='USE `sakila_dwh`', confOverlay=None, runAsync=False, queryTimeout=0)
+12-May-24 23:08:55 - TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b"'p\x8ck\xc3\x83AQ\xba\xadz\x02X$f\xca", secret=b"\x1b(\xcb4W^Nl\x9fy\x98+'o\xb1\x81"), operationType=0, hasResultSet=False, modifiedRowCount=None))
+12-May-24 23:08:55 - TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))
+12-May-24 23:08:55 - 
+                            CREATE TABLE Fact_Inventory_Analysis_ORC STORED AS ORC
+                            AS SELECT * FROM Fact_Inventory_Analysis_TextFile
+                         
+12-May-24 23:08:55 - TExecuteStatementReq(sessionHandle=TSessionHandle(sessionId=THandleIdentifier(guid=b'\xbb\xa7\x90\xcf\xb9\x03H\x86\x87\xe6\xf7S\xd5\x9a\xa5x', secret=b'\xedCvn\xf5gL\xfb\x95\xc8\xc3\x92\xb1\xbeD~')), statement='\n                            CREATE TABLE Fact_Inventory_Analysis_ORC STORED AS ORC\n                            AS SELECT * FROM Fact_Inventory_Analysis_TextFile\n                         ', confOverlay=None, runAsync=False, queryTimeout=0)
+12-May-24 23:10:03 - TExecuteStatementResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None), operationHandle=TOperationHandle(operationId=THandleIdentifier(guid=b'^K\x04+\xcd$BX\xb8\xfaE\x9e=)\xf1s', secret=b'\xe5(\xe6\xb1\x19\xc4Jp\x95\x93R.c\xe8\xe7\xb8'), operationType=0, hasResultSet=False, modifiedRowCount=None))
+12-May-24 23:10:03 - TCloseOperationResp(status=TStatus(statusCode=0, infoMessages=None, sqlState=None, errorCode=None, errorMessage=None))
