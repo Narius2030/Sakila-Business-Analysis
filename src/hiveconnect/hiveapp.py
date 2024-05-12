@@ -175,11 +175,11 @@ def drop_table(table_name, username):
         logging.error(e) 
 
 #store the row details into python list of tuples
-def ExtractRows(sqlstr, username): 
+def ExtractRows(query, username): 
     try:
         connection = hive.Connection(host="127.0.0.1", port="10000", username=username, database='sakila_dwh')
         
-        df = pd.read_sql(sqlstr, connection)
+        df = pd.read_sql(query, connection)
 
         records = df.to_records(index=False)
         result = list(records)
