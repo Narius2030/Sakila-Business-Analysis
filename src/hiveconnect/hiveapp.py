@@ -10,7 +10,7 @@ logging.basicConfig(filename="log.txt",level=logging.DEBUG,
 
 def LoadData(csv_file_path, tablename,username):
     try:
-        connection = hive.Connection(host="127.0.0.1", port="10000", username=username, database='sakila_dwh')
+        connection = hive.Connection(host="127.0.0.1", port="10000", username=username, database='sakila_6')
         absolute_csv_file_path = os.path.abspath('data').replace("\\", "/")
         temp_path=os.path.join(absolute_csv_file_path,"tables").replace("\\","/")
         final_path=os.path.join(temp_path,csv_file_path).replace("\\", "/")
@@ -29,7 +29,7 @@ def LoadData(csv_file_path, tablename,username):
 
 def CreateTableFact_Inventory_Analysis_TextFile(username):
     try:
-        connection=hive.Connection(host='127.0.0.1',port='10000',username = username,database='sakila_dwh')
+        connection=hive.Connection(host='127.0.0.1',port='10000',username = username,database='sakila_6')
         create_table_sql="""CREATE TABLE Fact_Inventory_Analysis_TextFile (
                                         inventory_key INT,
                                         rental_key INT,
@@ -51,7 +51,7 @@ def CreateTableFact_Inventory_Analysis_TextFile(username):
             return None 
 def CreateTableFact_Inventory_Analysis_ORC(username):
     try:
-        connection=hive.Connection(host='127.0.0.1',port='10000',username = username,database='sakila_dwh')
+        connection=hive.Connection(host='127.0.0.1',port='10000',username = username,database='sakila_6')
         create_table_sql="""
                             CREATE TABLE Fact_Inventory_Analysis_ORC STORED AS ORC
                             AS SELECT * FROM Fact_Inventory_Analysis_TextFile
@@ -67,7 +67,7 @@ def CreateTableDimDate(username):
     try:
         # lệnh kết nối
         connection=hive.Connection(host='127.0.0.1',port="10000",username=username,
-                                    database='sakila_dwh')
+                                    database='sakila_6')
         create_table_sql="""CREATE TABLE IF NOT EXISTS DimDate (
                                     date_key int,
                                     full_date STRING,
@@ -108,7 +108,7 @@ def CreateTableDimDate(username):
 def CreateDimRental(username):
     try:
         #lệnh kết nối
-        connection = hive.Connection(host="127.0.0.1", port="10000", username=username, database='sakila_dwh')
+        connection = hive.Connection(host="127.0.0.1", port="10000", username=username, database='sakila_6')
         create_table_sql= """
                 CREATE TABLE DimRental (
                 rental_key INT,
@@ -134,11 +134,12 @@ def CreateDimRental(username):
         print(3)
         logging.error(e)
         return None 
+
 #store the row details into python list of tuples
 def CreateDimInventory(username): 
     try:
         # Kết nối đến Hive server
-        connection = hive.Connection(host="127.0.0.1", port="10000", username=username, database='sakila_dwh')
+        connection = hive.Connection(host="127.0.0.1", port="10000", username=username, database='sakila_6')
         # Lệnh SQL để tạo bảng
         create_table_sql = """
         CREATE TABLE DimInventory (
@@ -169,10 +170,16 @@ def CreateDimInventory(username):
     except Exception as e:
         logging.error(e)
         return None     
-def df_rows_details(username,table_name): 
+def df_rows_details(query, username): 
     try:
-        connection = hive.Connection(host="127.0.0.1", port="10000", username=username, database='sakila_dwh')
-        df = pd.read_sql(f"select * from {table_name}", connection)
+        connection = hive.Connection(host="127.0.0.1", port="10000", username=username, database='sakila_6')
+        set_join = f"""
+        set hive.auto.convert.join=false
+        """
+        # Thực thi lệnh SQL
+        cursor = connection.cursor()
+        cursor.execute(set_join)
+        df = pd.read_sql(query, connection)
         print('\n converting the rows_data into DataFrame \n')
         print('converted successfully the rows_data into DataFrame')
         print(df)  # In ra dữ liệu của DataFrame
