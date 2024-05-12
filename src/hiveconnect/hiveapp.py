@@ -25,7 +25,7 @@ def create_database(dbname, username):
         logging.error(e)   
 
 
-
+"""Duc Nhan and Thien Nhan: Customer Segmentation task"""
 # create Rental Dimension
 def CreateTableDimRental(username):
     
@@ -191,6 +191,9 @@ def ExtractRows(query, username):
         return None
 
 
+"""Quang Huy and Trieu Phi: Inventory Analysis task
+"""
+
 def CreateTableFact_Inventory_Analysis_TextFile(username):
     try:
         connection=hive.Connection(host='127.0.0.1',port='10000',username = username,database='sakila_dwh')
@@ -272,38 +275,7 @@ def CreateTableDimDate(username):
         print(f"Table DimDate created successfully")
     except Exception as e:
             logging.error(e)
-            return None 
-        
-
-# def CreateDimRental(username):
-#     try:
-#         #lệnh kết nối
-#         connection = hive.Connection(host="127.0.0.1", port="10000", username=username, database='sakila_dwh')
-#         create_table_sql= """
-#                 CREATE TABLE DimRental (
-#                 rental_key INT,
-#                 rental_id INT,
-#                 rental_date STRING,
-#                 inventory_id int,
-#                 customer_id INT,
-#                 return_date STRING,
-#                 staff_id INT,
-#                 amount DECIMAL(10, 2),
-#                 payment_date STRING
-#             )
-#             ROW FORMAT DELIMITED
-#             FIELDS TERMINATED BY ','
-#             STORED AS TEXTFILE
-#             TBLPROPERTIES ('skip.header.line.count'='1')
-#             """
-#         cursor=connection.cursor()
-#         cursor.execute(create_table_sql)
-#         cursor.close()
-#         print(f"Table DimRental created successfully.")   
-#     except Exception as e:
-#         print(3)
-#         logging.error(e)
-#         return None 
+            return None  
 
 
 #store the row details into python list of tuples
