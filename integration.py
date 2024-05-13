@@ -1,6 +1,6 @@
 from src.hiveconnect import hiveapp
 
-username='buidu'
+username='hdang'
 
 # Create dimension tables
 hiveapp.CreateTableDimRental(username=username)
