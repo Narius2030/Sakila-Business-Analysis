@@ -3,13 +3,13 @@
 ## Introduction
 Data set context: Sakila contains data about movie rental and payment transactions. In addition, it also contains information about movies and customers.
 
-Goal: Build a data warehouse with Apache Hive, extract, transform, and store (ETL) in Dimension and Fact tables. Serves for analyzing operations, helping to improve business strategies to bring profits to businesses
+**Goal:** Build a data warehouse with Apache Hive, extract, transform, and store (ETL) in Dimension and Fact tables. Serves for analyzing operations, helping to improve business strategies to bring profits to businesses
 
 ### 1. Customer Segmentation
 
 Customer segmentation: aims to group customers according to certain behavioral characteristics, forming data clusters. From there, marketing campaigns or incentives will easily reach the appropriate customer groups
-- Use clustering model according to KMean algorithm: important attributes in this model are recency, frequency and currency
-- The performance measures of the model are SSE, sum of squared distances to cluster centers and Silhouette Coefficient method. From there, you can choose the best number of clusters so that the data is clustered more clearly
+- Use clustering model according to `KMean` algorithm: important attributes in this model are `recency`, `frequency` and `monetary`
+- The performance measures of the model are `SSE`, sum of squared distances to cluster centers and `Silhouette Coefficient` method. From there, you can choose the best number of clusters so that the data is clustered more clearly
 
 ### 2. Film Inventory Analysis
 
