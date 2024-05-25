@@ -16,8 +16,7 @@ Customer segmentation: aims to group customers according to certain behavioral c
 The goal is to track the quantity of inventory and revenue of each film in the film warehouse. So that, there will be strategies to adjust the process of importing and exporting inventory accordingly
 
 ## Connect Apache Hive on Python
-Edit the core-site.xml file in Hadoop, add the proxy configuration section for the user and close the file
-> **Note:** start hiveserver2 before connect
+> **Note:** Edit the core-site.xml file in Hadoop, add the proxy configuration section for the user and close the file
 ```xml
 <property>
     <name>hadoop.proxyuser.<username>.hosts</name>
@@ -27,6 +26,10 @@ Edit the core-site.xml file in Hadoop, add the proxy configuration section for t
     <name>hadoop.proxyuser.<username>.groups</name>
     <value>*</value>
 </property>
+```
+> **Note:** start hiveserver2 before connect
+```
+hive --service hiveserver2 start
 ```
 
 ## Schemas
