@@ -1,5 +1,3 @@
-# Data-Mining-with-ApacheHive
-
 ## Introduction
 Data set context: Sakila contains data about movie rental and payment transactions. In addition, it also contains information about movies and customers.
 
