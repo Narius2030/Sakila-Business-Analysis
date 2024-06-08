@@ -8,6 +8,7 @@ hiveapp.CreateTableDimCustomer(username=username)
 DimInventory=hiveapp.CreateDimInventory(username)
 DimDate=hiveapp.CreateTableDimDate(username)
 
+# Load source data to stages (csv) in preprocessing folder
 # Load csv stages to dimension tables
 hiveapp.LoadData('dimRental.txt', 'dim_rental', username=username)
 hiveapp.LoadData('dimCustomer.csv', 'dim_customer', username=username)
